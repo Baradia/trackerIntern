@@ -1,1 +1,72 @@
-{"jobs": {}, "health": {}, "seeded": false}
+{
+ "health": {
+  "Bruce Power": {
+   "consecutive_empty": 0,
+   "last_count": 13,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "Honda Canada": {
+   "consecutive_empty": 0,
+   "last_count": 4,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "Linamar": {
+   "consecutive_empty": 0,
+   "last_count": 209,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "Magna International": {
+   "consecutive_empty": 0,
+   "last_count": 274,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "Miovision": {
+   "consecutive_empty": 0,
+   "last_count": 10,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "Multimatic": {
+   "consecutive_empty": 0,
+   "last_count": 108,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "OTTO Motors (Rockwell)": {
+   "consecutive_empty": 0,
+   "last_count": 172,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "Profound Medical": {
+   "consecutive_empty": 0,
+   "last_count": 18,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  },
+  "Toyota Motor Manufacturing Canada": {
+   "consecutive_empty": 0,
+   "last_count": 15,
+   "last_success": "2026-08-13T05:20:29+00:00"
+  }
+ },
+ "jobs": {
+  "Magna International::R00246165": "2026-08-13T05:20:29+00:00",
+  "Magna International::R00248459": "2026-08-13T05:20:29+00:00",
+  "Magna International::R00249696": "2026-08-13T05:20:29+00:00",
+  "Magna International::R00250454": "2026-08-13T05:20:29+00:00",
+  "Magna International::R00251133": "2026-08-13T05:20:29+00:00",
+  "Magna International::R00252065": "2026-08-13T05:20:29+00:00",
+  "Magna International::R00252235": "2026-08-13T05:20:29+00:00",
+  "Magna International::R00252658": "2026-08-13T05:20:29+00:00",
+  "Multimatic::JR103258": "2026-08-13T05:20:29+00:00",
+  "Multimatic::JR103350": "2026-08-13T05:20:29+00:00",
+  "alt::00c67c8b0f0143cf": "2026-08-13T05:20:29+00:00",
+  "alt::00dc747a3b776a7d": "2026-08-13T05:20:29+00:00",
+  "alt::322d94a953da13ab": "2026-08-13T05:20:29+00:00",
+  "alt::3df57b5c310b8c31": "2026-08-13T05:20:29+00:00",
+  "alt::4da686c2b9a2ff37": "2026-08-13T05:20:29+00:00",
+  "alt::50d5a859a85a26d6": "2026-08-13T05:20:29+00:00",
+  "alt::8ac010b791b1b8e9": "2026-08-13T05:20:29+00:00",
+  "alt::c5805705f75abcb5": "2026-08-13T05:20:29+00:00",
+  "alt::cf7b8d32cba0c04e": "2026-08-13T05:20:29+00:00",
+  "alt::d7662e35487e798c": "2026-08-13T05:20:29+00:00"
+ },
+ "seeded": true
+}

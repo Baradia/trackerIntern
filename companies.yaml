@@ -18,37 +18,37 @@ companies:
   - name: Multimatic
     ats: workday
     tenant: multimatic
-    wd: wd3
-    site: Careers
+    wd: wd10
+    site: MMEC
     tier: ontario
-    enabled: false
 
   - name: Magna International
     ats: workday
+    host: wd3.myworkdaysite.com
     tenant: magna
-    wd: wd1
-    site: Careers
+    site: Magna
     tier: ontario
-    enabled: false
+    search_terms: [intern, co-op, coop, student]
+    max_pages_per_term: 5
 
   - name: Linamar
-    ats: smartrecruiters
-    token: Linamar
+    ats: oracle
+    host: fa-epmd-saasfaprod1.fa.ocs.oraclecloud.com
+    site: CX_3001
     tier: ontario
 
+  # Martinrea runs PrevueAPS (martinrea.prevueaps.com) - needs a custom parser
   - name: Martinrea International
-    ats: workday
-    tenant: martinrea
-    wd: wd3
-    site: Careers
+    ats: custom
+    handler: martinrea
     tier: ontario
     enabled: false
 
+  # jobs.atsautomation.com is a custom domain - check the network tab to see
+  # which ATS sits behind it, then set ats/token accordingly
   - name: ATS Corporation
-    ats: workday
-    tenant: atsautomation
-    wd: wd3
-    site: ATS_Careers
+    ats: custom
+    handler: atsautomation
     tier: ontario
     enabled: false
 
@@ -56,106 +56,111 @@ companies:
     ats: workday
     tenant: rockwellautomation
     wd: wd1
-    site: External_Rockwell_Careers
+    site: External_Rockwell_Automation
     tier: ontario
-    enabled: false
+    search_terms: [intern, co-op, coop, student]
+    max_pages_per_term: 5
 
   - name: Miovision
-    ats: lever
+    ats: ashby
     token: miovision
     tier: ontario
 
+  # CONFIRM: this Oracle pod returned non-Christie postings (Polish roles).
+  # Shared pods host many employers - check CX_4001 is really Christie.
   - name: Christie Digital
-    ats: workday
-    tenant: christiedigital
-    wd: wd3
-    site: Christie_Careers
+    ats: oracle
+    host: emfg.fa.em4.oraclecloud.com
+    site: CX_4001
     tier: ontario
     enabled: false
 
   - name: Toyota Motor Manufacturing Canada
     ats: workday
     tenant: toyota
-    wd: wd1
-    site: Careers
+    wd: wd503
+    site: Toyota_CA
     tier: ontario
-    enabled: false
 
   - name: Honda Canada
     ats: workday
-    tenant: honda
-    wd: wd1
-    site: Honda_Careers
+    tenant: ch
+    wd: wd3
+    site: Honda_Canada
     tier: ontario
-    enabled: false
 
+  # TODO custom domain jobs.dana.com
   - name: Dana Incorporated
-    ats: workday
-    tenant: dana
-    wd: wd1
-    site: Dana_Careers
+    ats: custom
+    handler: dana_incorporated
     tier: ontario
     enabled: false
 
+  # TODO embedded widget on armstrongfluidtechnology.com
   - name: Armstrong Fluid Technology
-    ats: smartrecruiters
-    token: ArmstrongFluidTechnology
+    ats: custom
+    handler: armstrong_fluid_technology
     tier: ontario
+    enabled: false
 
+  # TODO careers.tranetechnologies.com
   - name: Trane Technologies
-    ats: workday
-    tenant: tranetechnologies
-    wd: wd5
-    site: careers
+    ats: custom
+    handler: trane_technologies
     tier: ontario
     enabled: false
 
+  # TODO embedded widget on corporate.nestle.ca
   - name: Nestle Canada
-    ats: smartrecruiters
-    token: NestleOperationalServicesWorldwideSA
+    ats: custom
+    handler: nestle_canada
     tier: ontario
+    enabled: false
 
+  # TODO embedded widget on mapleleaffoods.com
   - name: Maple Leaf Foods
-    ats: workday
-    tenant: mapleleaffoods
-    wd: wd3
-    site: MLF_Careers
+    ats: custom
+    handler: maple_leaf_foods
     tier: ontario
     enabled: false
 
+  # TODO SuccessFactors: najobs.arcelormittal.com/dofasco
   - name: ArcelorMittal Dofasco
-    ats: smartrecruiters
-    token: ArcelorMittal
+    ats: custom
+    handler: arcelormittal_dofasco
     tier: ontario
+    enabled: false
 
+  # TODO embedded widget on wsp.com
   - name: WSP
-    ats: workday
-    tenant: wsp
-    wd: wd3
-    site: WSP_Careers
+    ats: custom
+    handler: wsp
     tier: ontario
     enabled: false
 
+  # TODO custom domain stantec.jobs
   - name: Stantec
-    ats: workday
-    tenant: stantec
-    wd: wd1
-    site: Stantec_Careers
+    ats: custom
+    handler: stantec
     tier: ontario
     enabled: false
 
+  # TODO embedded widget on rwdi.com
   - name: RWDI
-    ats: lever
-    token: rwdi
+    ats: custom
+    handler: rwdi
     tier: ontario
+    enabled: false
 
+  # TODO Dayforce: jobs.dayforcehcm.com/en-US/pp4h663/CANDIDATEPORTAL
   - name: Synaptive Medical
-    ats: lever
-    token: synaptivemedical
+    ats: custom
+    handler: synaptive_medical
     tier: ontario
+    enabled: false
 
   - name: Profound Medical
-    ats: lever
+    ats: bamboohr
     token: profoundmedical
     tier: ontario
 
@@ -176,7 +181,9 @@ companies:
     tier: ontario_defence
     enabled: false
 
+  # TODO not on SmartRecruiters - returns empty. Needs a real lookup.
   - name: MDA Space
+    enabled: false
     ats: smartrecruiters
     token: MDA
     tier: ontario_defence
@@ -189,7 +196,9 @@ companies:
     tier: ontario_defence
     enabled: false
 
+  # TODO not on SmartRecruiters - returns empty. Needs a real lookup.
   - name: Safran
+    enabled: false
     ats: smartrecruiters
     token: Safran
     tier: ontario_defence
@@ -219,8 +228,10 @@ companies:
     enabled: false
 
   - name: Bruce Power
-    ats: smartrecruiters
-    token: BrucePower
+    ats: workday
+    tenant: brucepower
+    wd: wd3
+    site: BrucePower
     tier: ontario_defence
 
   - name: AtkinsRealis
