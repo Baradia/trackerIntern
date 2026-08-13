@@ -1,0 +1,314 @@
+# IMPORTANT: every token/tenant below is a best guess based on the usual
+# naming pattern. Run `python verify.py` before trusting any of them.
+# Workday entries need the tenant/wd/site read off the network tab, so they
+# ship disabled. Flip `enabled: true` once verify.py confirms them.
+#
+#   greenhouse      job-boards.greenhouse.io/<token>
+#   lever           jobs.lever.co/<token>
+#   smartrecruiters careers.smartrecruiters.com/<token>
+#   workday         <tenant>.<wd>.myworkdayjobs.com/<site>
+
+defaults:
+  user_agent: "UW-CoopTracker/1.0 (+a2baradi@uwaterloo.ca)"
+  detail_cap: 25          # max description fetches per company per run
+
+companies:
+
+  # ======================= ONTARIO - COMMERCIAL =========================
+  - name: Multimatic
+    ats: workday
+    tenant: multimatic
+    wd: wd3
+    site: Careers
+    tier: ontario
+    enabled: false
+
+  - name: Magna International
+    ats: workday
+    tenant: magna
+    wd: wd1
+    site: Careers
+    tier: ontario
+    enabled: false
+
+  - name: Linamar
+    ats: smartrecruiters
+    token: Linamar
+    tier: ontario
+
+  - name: Martinrea International
+    ats: workday
+    tenant: martinrea
+    wd: wd3
+    site: Careers
+    tier: ontario
+    enabled: false
+
+  - name: ATS Corporation
+    ats: workday
+    tenant: atsautomation
+    wd: wd3
+    site: ATS_Careers
+    tier: ontario
+    enabled: false
+
+  - name: OTTO Motors (Rockwell)
+    ats: workday
+    tenant: rockwellautomation
+    wd: wd1
+    site: External_Rockwell_Careers
+    tier: ontario
+    enabled: false
+
+  - name: Miovision
+    ats: lever
+    token: miovision
+    tier: ontario
+
+  - name: Christie Digital
+    ats: workday
+    tenant: christiedigital
+    wd: wd3
+    site: Christie_Careers
+    tier: ontario
+    enabled: false
+
+  - name: Toyota Motor Manufacturing Canada
+    ats: workday
+    tenant: toyota
+    wd: wd1
+    site: Careers
+    tier: ontario
+    enabled: false
+
+  - name: Honda Canada
+    ats: workday
+    tenant: honda
+    wd: wd1
+    site: Honda_Careers
+    tier: ontario
+    enabled: false
+
+  - name: Dana Incorporated
+    ats: workday
+    tenant: dana
+    wd: wd1
+    site: Dana_Careers
+    tier: ontario
+    enabled: false
+
+  - name: Armstrong Fluid Technology
+    ats: smartrecruiters
+    token: ArmstrongFluidTechnology
+    tier: ontario
+
+  - name: Trane Technologies
+    ats: workday
+    tenant: tranetechnologies
+    wd: wd5
+    site: careers
+    tier: ontario
+    enabled: false
+
+  - name: Nestle Canada
+    ats: smartrecruiters
+    token: NestleOperationalServicesWorldwideSA
+    tier: ontario
+
+  - name: Maple Leaf Foods
+    ats: workday
+    tenant: mapleleaffoods
+    wd: wd3
+    site: MLF_Careers
+    tier: ontario
+    enabled: false
+
+  - name: ArcelorMittal Dofasco
+    ats: smartrecruiters
+    token: ArcelorMittal
+    tier: ontario
+
+  - name: WSP
+    ats: workday
+    tenant: wsp
+    wd: wd3
+    site: WSP_Careers
+    tier: ontario
+    enabled: false
+
+  - name: Stantec
+    ats: workday
+    tenant: stantec
+    wd: wd1
+    site: Stantec_Careers
+    tier: ontario
+    enabled: false
+
+  - name: RWDI
+    ats: lever
+    token: rwdi
+    tier: ontario
+
+  - name: Synaptive Medical
+    ats: lever
+    token: synaptivemedical
+    tier: ontario
+
+  - name: Profound Medical
+    ats: lever
+    token: profoundmedical
+    tier: ontario
+
+  # ================= ONTARIO - AEROSPACE / DEFENCE / NUCLEAR ============
+  - name: Bombardier
+    ats: workday
+    tenant: bombardier
+    wd: wd3
+    site: BOMBARDIER_External
+    tier: ontario_defence
+    enabled: false
+
+  - name: RTX (Pratt & Whitney Canada)
+    ats: workday
+    tenant: rtx
+    wd: wd5
+    site: REC_RTX_Ext_Gateway
+    tier: ontario_defence
+    enabled: false
+
+  - name: MDA Space
+    ats: smartrecruiters
+    token: MDA
+    tier: ontario_defence
+
+  - name: L3Harris
+    ats: workday
+    tenant: l3harris
+    wd: wd1
+    site: Careers
+    tier: ontario_defence
+    enabled: false
+
+  - name: Safran
+    ats: smartrecruiters
+    token: Safran
+    tier: ontario_defence
+
+  - name: Honeywell
+    ats: workday
+    tenant: honeywell
+    wd: wd1
+    site: Honeywell_External_Career_Site
+    tier: ontario_defence
+    enabled: false
+
+  - name: BWXT
+    ats: workday
+    tenant: bwxt
+    wd: wd1
+    site: BWXT_Careers
+    tier: ontario_defence
+    enabled: false
+
+  - name: Ontario Power Generation
+    ats: workday
+    tenant: opg
+    wd: wd3
+    site: OPG_Careers
+    tier: ontario_defence
+    enabled: false
+
+  - name: Bruce Power
+    ats: smartrecruiters
+    token: BrucePower
+    tier: ontario_defence
+
+  - name: AtkinsRealis
+    ats: workday
+    tenant: atkinsrealis
+    wd: wd3
+    site: Careers
+    tier: ontario_defence
+    enabled: false
+
+  - name: Hatch
+    ats: workday
+    tenant: hatch
+    wd: wd3
+    site: Hatch_Careers
+    tier: ontario_defence
+    enabled: false
+
+  - name: General Dynamics Land Systems Canada
+    ats: workday
+    tenant: gdls
+    wd: wd1
+    site: Careers
+    tier: ontario_defence
+    enabled: false
+
+  # ========================== CALIFORNIA ================================
+  # Low priority: needs J-1 through the co-op office. Run with --tier california
+  - name: Rivian
+    ats: greenhouse
+    token: rivian
+    tier: california
+    enabled: false
+
+  - name: Lucid Motors
+    ats: greenhouse
+    token: lucidmotors
+    tier: california
+    enabled: false
+
+  - name: Zoox
+    ats: greenhouse
+    token: zoox
+    tier: california
+    enabled: false
+
+  - name: Intuitive Surgical
+    ats: workday
+    tenant: intuitivesurgical
+    wd: wd1
+    site: Intuitive_Careers
+    tier: california
+    enabled: false
+
+  - name: Applied Materials
+    ats: workday
+    tenant: amat
+    wd: wd1
+    site: External
+    tier: california
+    enabled: false
+
+  - name: AMD
+    ats: workday
+    tenant: amd
+    wd: wd1
+    site: External
+    tier: california
+    enabled: false
+
+  - name: Illumina
+    ats: workday
+    tenant: illumina
+    wd: wd1
+    site: illumina_careers
+    tier: california
+    enabled: false
+
+  # ===================== IN-HOUSE PORTALS (phase 2) =====================
+  # Write parsers/custom/<handler>.py, register in parsers/custom/__init__.py
+  - name: Tesla
+    ats: custom
+    handler: tesla
+    tier: california
+    enabled: false
+
+  - name: Apple
+    ats: custom
+    handler: apple
+    tier: california
+    enabled: false

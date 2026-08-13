@@ -1,0 +1,41 @@
+name: coop-tracker
+
+on:
+  schedule:
+    # every 2 hours between 11:00 and 23:00 UTC (7am-7pm ET)
+    - cron: '0 11-23/2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coop-tracker
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python scraper.py
+
+      - name: Persist state
+        run: |
+          git config user.name  "coop-tracker"
+          git config user.email "actions@users.noreply.github.com"
+          git add seen_jobs.json rejected.log || true
+          git diff --staged --quiet || git commit -m "state: $(date -u +%Y-%m-%dT%H:%M)"
+          git push

@@ -1,0 +1,85 @@
+# Layers 1 and 2 are HARD KILLS. Layer 3 (tag) never rejects anything.
+
+title:
+  # must match one of these to be considered a student role
+  include: "intern|interns|internship|co-?op|coop|student|new grad|graduate program"
+
+  # instant reject regardless of anything else
+  exclude: "senior|sr\\.|staff|principal|manager|director|supervisor|lead engineer|nurse|sales|recruiter|account executive"
+
+  # must also look mechanical-adjacent
+  discipline: "mechanical|manufactur|design|CNC|machin|CAD|SolidWorks|CATIA|thermal|HVAC|mechatron|robotic|automation|process|product|R&D|test|quality|tooling|weld|fabricat|structural|engineer"
+
+location:
+  # substring match, case-insensitive
+  allow:
+    - ontario
+    - toronto
+    - mississauga
+    - brampton
+    - markham
+    - vaughan
+    - oakville
+    - burlington
+    - hamilton
+    - oshawa
+    - ajax
+    - whitby
+    - guelph
+    - cambridge
+    - kitchener
+    - waterloo
+    - london
+    - woodstock
+    - alliston
+    - aurora
+    - newmarket
+    - barrie
+    - peterborough
+    - windsor
+    - ancaster
+    - tiverton
+    - canada
+    # california tier
+    - california
+    - ", ca"
+    - palo alto
+    - fremont
+    - san jose
+    - santa clara
+    - sunnyvale
+    - mountain view
+    - irvine
+    - san diego
+    - newark
+    - foster city
+  # keep postings with a blank location rather than silently dropping them
+  allow_unknown: true
+
+# Layer 3: annotate only. These NEVER reject a posting.
+tag:
+  us_sponsorship: "without sponsorship|not (be )?able to sponsor|must be a U\\.?S\\.? (person|citizen)|ITAR|export control"
+  upper_year: "3rd year|third year|4th year|fourth year|final year|graduating"
+  grad_only: "enrolled in a (Master|PhD|graduate)|MSc|MASc"
+  term_4mo: "4[- ]month|four[- ]month"
+  term_8mo: "8[- ]month|eight[- ]month|two consecutive"
+  security_clearance: "security clearance|controlled goods|reliability status"
+  remote: "remote|work from home|hybrid"
+
+# Layer 4: ordering and colour. Green >= 4, yellow >= 1, grey below.
+score:
+  base: 2
+  keywords:
+    "co-?op|coop": 2
+    "mechanical": 2
+    "SolidWorks|CAD|CATIA": 2
+    "CNC|machining|sheet metal": 3
+    "manufactur|production": 1
+    "HVAC|thermal": 1
+    "first year|1st year|any year|all years": 3
+    "Winter 2027|W2027|January 2027": 2
+  tags:
+    us_sponsorship: -2
+    grad_only: -3
+    upper_year: -1
+    security_clearance: -1
