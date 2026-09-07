@@ -112578,3 +112578,796 @@
 2026-09-06T21:01:33+00:00	L1-not-student-role	Bruce Power	Project Controls - Schedule/Planner (Contract) Talent Pool	Bruce Power
 2026-09-06T21:01:33+00:00	L1-not-student-role	Bruce Power	Estimator (Contract) Talent Pool	Bruce Power
 2026-09-06T21:01:33+00:00	L1-not-student-role	Bruce Power	Work Management Coordinator (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Forklift Operator 3rd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Production Operator 2nd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automotive Detailer	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automotive Paint Technician	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Suspension Design Engineer	Thetford Norfolk, United Kingdom
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Sr. Supplier Development Engineer	Concord, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Manufacturing Engineer	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Production Supervisor 1st shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Composites Process Lead	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Metallurgy Lab Technician - 3rd Shift	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Maintenance Press Shop Technician	Richmond Hill, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	CMM Progammer/Operator	Richmond Hill, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Quality Systems Coordinator	Richmond Hill, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Engineering Industrial Placements 2027/28	Thetford, Norfolk
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Electrician Apprentice	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	IT Analyst	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Business Systems Analyst (Workday & Employee Systems)	Multimatic Corporate IT
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Composites Technician-Afternoon Shift	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Manufacturing Engineer	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Robotic Technician	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Production Operator	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Facilities Maintenance Person	Thetford, Norfolk
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automotive Prep Technician	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Chassis Technician	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Vehicle Assembly - Body Fit Technician	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Industrial Mechanic Millwright	Concord, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Controls Tech - 2nd Shift	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Controls Tech - 3rd	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Process Engineer	Concord, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Test Team Electrical Technician	Multimatic Motorsports Europe (MME) (Brackley)
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Junior Preventative Maintenance Technician	Richmond Hill, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Production Operator	
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Quality Weld Analyzer	Butler, Indiana
+2026-09-07T00:38:18+00:00	L2-location	Multimatic	Manufacturing Engineer Co-op	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Quality Engineer and SQE	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Robotic Technician	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	CNC Setter/Operator - Turning Nights	Thetford, Norfolk
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Weld Repair Operator 2nd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Weld Technician 2nd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Weld Technician 3rd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Accra Tech 3rd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Production Supervisor	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Robotic Weld Tech	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Coordinator - Engineering	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Matricero Prensas	San Jose Iturbide, Guanajuato
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Tool & Die Maker - 2nd Shift	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	TIG Welder - 2nd or 3rd Shift	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Maintenance Tech - 3rd Shift	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Maintenance Technician - 2nd Shift	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Application Software Engineer	Multimatic Electronic Systems – United Kingdom (Cambridge)
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Embedded Software Engineer	Multimatic Electronic Systems – United Kingdom (Cambridge)
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Damper Assembly Technician	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Electrician	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Lead Hand 3rd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Materials Supervisor	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Maintenance Millwright	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Composite Technician	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Composite Technician	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Maintenance Technician 3rd shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Facilities Engineer	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Accra Tech 1st Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Weld Repair Operator 3rd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Weld Repair Operator	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Design Engineer - Structures and Suspension	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Platform Manager	Concord, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automated Machine Operator 1st shift (rocker mill)	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automotive Paint Technician	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	IT Security Analyst – Security Operations	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Business Systems Analyst (IT / AI / S/4HANA)	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automotive Paint Technician Trainer	Newmarket, Ontario
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Technical Sales Manager	Novi, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Manufacturing Engineer	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Quality Manager	Lewisburg, Tennessee
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Senior Design Engineer	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Teamcenter PLM Developer (Active Workspace)	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Program Manager	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Manufacturing Engineer, Hot Form Press	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Manufacturing Engineer	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automation Engineer	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Network Administrator	Multimatic Corporate IT
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	CNC Programmer - 3rd Shift	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Production Operator	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Tool & Die Maker - 3rd	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Test Engineer	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Maintenance Manager	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Material Handler	Multimatic Automotive Technologies Kunshan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Tooling Engineer	Lewisburg, Tennessee
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Program Management Launch Engineer - Automotive	Lewisburg, Tennessee
+2026-09-07T00:38:18+00:00	L1-wrong-discipline	Multimatic	Assembly Support Co-op	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Robotic Technician	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-wrong-discipline	Multimatic	E-Coat Co-op	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Quality Engineer/ Quality Systems	Lewisburg, Tennessee
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Facility Coordinator	Concord, Ontario
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Technical Sales Manager	Novi, Michigan
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Design Engineer - Mechanisms	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Program Manager	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Senior Design Engineer - Vehicle Systems	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Forklift Operator - 3rd shift Materials Dept	Fort Wayne, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Robotic Technician	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Automotive Paint Technician	Markham, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	CNC Setter/Operator Turning	Thetford, Norfolk
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Press Automation Operator 2nd Shift	Butler, Indiana
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Millwright	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Toolmaker	East Gwillimbury, Ontario
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Production Operator	Thetford, Norfolk
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Quality Engineer/ Quality Systems	Lewisburg, Tennessee
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Over-moulding Process Engineer	Multimatic Automotive Technologies Kunshan
+2026-09-07T00:38:18+00:00	L1-wrong-discipline	Multimatic	Placement Student	Multimatic Electronic Systems – United Kingdom (Cambridge)
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Robotic Weld Tech	Jackson, Michigan
+2026-09-07T00:38:18+00:00	L1-exclude	Multimatic	Technical Sales Manager	Multimatic Japan Inc.
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Embedded Software Engineer	Cambridge, UK
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Truck Driver	Multimatic Motorsports USA (Gasoline Alley)
+2026-09-07T00:38:18+00:00	L1-not-student-role	Multimatic	Electronics Hardware Engineer	Multimatic Electronics Systems United Kingdom (Fison Way)
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Intern	Pune, IN
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Finance Intern	Changning, Shanghai, CN
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Finance Intern	Muncie, Indiana, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	IT Intern	Liberty, Missouri, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Logistics Intern	Muncie, Indiana, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	System Intern	Changning, Shanghai, CN
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Senior Internal Auditor	2 Locations
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Internal Auditor - Mexico	San Pedro Garza Garcia, N.L., MX
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Group Leader Control Interno	Ramos Arizpe, MX
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Intern - Systems Engineering	Southfield, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Product Engineering Intern	Grand Rapids, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Intern - System Test	Auburn Hills, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Intern, Industrial Solutions	Bangalore, IN
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Intern - Engineering Optics	Auburn Hills, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Equipment Engineering Intern	Warren, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Intern - Engineering Software	Southfield, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Materials Intern - Summer 2026	Holland, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	HR Intern- Summer 2026	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Engineering Intern - Summer 2026	Newaygo, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Quality Intern - Summer 2026	Newaygo, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Intern - ADAS Feature Owner	Southfield, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Student Intern - Engineering-1	Highland Park, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Intern, Smart Factory Solutions	Bangalore, IN
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Intern - Infrared Imaging & Algorithms	Goleta, California, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Intern - Engineering Mechanical Optics	Auburn Hills, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Internship - Human Resources	Newaygo, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Supply Chain Internship	Highland Park, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Contador de Control interno	Cuautitlan Izcalli, MX
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Ingeniero en Controles IoT (Internet of Things)	Ramos Arizpe, MX
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Ingeniero en Controles IoT (Internet of Things) (PC&L)	Ramos Arizpe, MX
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Jr. Financial Analyst (Co-op)	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Practicante de Calidad	Saltillo, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Estagio RH & EHS	Ibirite, Minas Gerais, BR
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Jefe de Producción	Ejido Laguna De San Vincente, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Ingeniero de Calidad Proveedores	Coah., MX
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Supervisor de Materiales	Coah., MX
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Supervisor de Materiales	Coah., MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Operador Logístico	Ibirite, Minas Gerais, BR
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	PLANEADOR DE ACEROS	Ramos Arizpe, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Robotics AI Algorithm- R&D Summer 2026	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Praktikant Fertigung m/w/x	Neuenstein, DE
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Werkstudent IT	Markt Schwaben, DE
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Junior Full Stack Developer Coop	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	WCM Co-op Student	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Praktikant / Werksstudent im Bereich Human Resources (m/w/d)	Meerane, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Practicante de Mantenimiento	Ejido Laguna De San Vincente, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Practicante de Mantenimiento	Saltillo, MX
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Student (m/f/x) Project/Program Purchasing	2 Locations
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Co-op Student, Organizational Change Management	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Practicante de materiales	Saltillo, MX
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Materials Co-op Student	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Especialista en Soldadura	Coah., MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Especialista de Soldadura	Coah., MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Especialista de Soldadura	Coah., MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Material Handler	Ethridge, Tennessee, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Pipefitter Steamfitter	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Technician, Robotics	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Metal Fabricator	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Millwright	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Toolmaker /Dimensional Finisher	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Business Development Manager	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	HVAC Technician	Etobicoke, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Engineer, AI & Software Testing	Toronto, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Robotic Technician	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Spvr, Toolroom	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Lead Robotic Technician	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Real Estate Coordinator	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Specialist, Payroll	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Simulation Engineer	Vecses, HU
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Tax Specialist, Payroll	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Manufacturing Engineer	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Environmental Program Engineer	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Advanced Manufacturing Engineer	Coah., MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Tooling Engineer	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Engineering Coordinator - Process	St. Thomas – Formet, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Temporary Materials Coordinator	St. Thomas – Formet, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Technical Team Member - Tool & Die (Straight Nights)	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Technical Team Member - Millwright (Straight Midnights)	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Simulation Engineer	Timisoara, RO
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Welder (Certified)	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Full Stack Developer	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Manufacturing Engineering Coordinator	St. Thomas – Presstran, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Environmental, Health and Safety Coordinator	St. Thomas – Formet, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Millwright	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Tear Down Operator	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Program Manager	Etobicoke, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Toolmaker	Mississauga, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Senior Human Resources Generalist	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Commercial Coordinator	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Project Engineer	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Advanced Manufacturing Engineer	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Senior Analyst, IT Finance & Controlling	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Occupational Health Nurse Technician	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Weekend Crew - Maintenance Technician - Electrician	St. Thomas – Formet, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Weekend Crew - Maintenance Technician - Millwright	St. Thomas – Formet, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Maintenance Technician - Electrician	St. Thomas – Formet, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	IT Co-op	Penetanguishene, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Finance Co-op Student	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Financial Analyst	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Planeador de Mantenimiento	Coah., MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Contract Human Resources Generalist	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Magna Engineered Glass: Manufacturing Engineering Coordinator	Holland, Michigan, US
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Software Engineering Student	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Customs Compliance Student	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Werkstudent Buchhaltung (m/w/d)	Soest, DE
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Werkstudent (m/w/d) Umweltmanagement und Nachhaltigkeit	Soest, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Manufacturing Engineering - Jr.	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Electrician (Certified)	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Shift Leader, Mechanical-1	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Junior Manufacturing Engineer	Milton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Student Finance (m/f/x)	Sailauf, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	装配Ⅱ类（实习生）	Nanchang, Jiangxi, CN
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Initiativbewerbung - Working Students St. Valentin (m/w/x)	St. Valentin, AT
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Masterarbeit im Bereich Software Engineering: Portierung eines Simulations-Rechenkerns von Windows nach Linux	St. Valentin, AT
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Prototype Inspection Student	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Student - Finance	2 Locations
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Software Developer - Student	Iasi, RO
+2026-09-07T00:38:42+00:00	L2-location	Magna International	Software Tester - Student	Iasi, RO
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Algorithm Developer - Student	Timisoara, RO
+2026-09-07T00:38:42+00:00	L1-wrong-discipline	Magna International	Working Student (m/f/x) - Perception & Customer Functions Development	Muenchen, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Master Thesis: DevOps Engineer - Building the Future of Release Visibility	Linkoping, SE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Master Thesis: DevOps Engineer - Next-Generation Credential Management	Linkoping, SE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Shipping & Receiving Co-Ordinator	Bagenalstown, IE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Analyst, SAP FI/CO	Bangalore, IN
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Production Operator (Contract)	Brampton, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Commodity Buyer	Tychy, PL
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Comprador Indirectos	Cuautitlan Izcalli, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Comprador de Indirectos	Saltillo, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Líder de compras	Saltillo, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Component Technical Lead	Southfield, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Regional Commodity Buyer	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Estagiário de Compras	Sao Jose Dos Pinhais, Paraná, BR
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	CTPAT Coordinator and Jr. Buyer	Vaughan, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Especialista de Cumplimiento en Comercio Exterior	Saltillo, MX
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Senior Analyst, SAP FI/CO	Bangalore, IN
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Operational Improvement Manager	Kocaeli, TR
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	CMM Operator, 2nd shift	Williamsburg, Iowa, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Sr.Specialist, Logistics, Fleet Manager Operation (m/w/x)	Graz, AT
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Sr. Financial Analyst Reporting Operations NA	Aurora, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Machinery Operator	Plzen, CZ
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Machining Operations Group Leader	Ramos Arizpe, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Buyer	Ramos Arizpe, MX
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Warranty Engineer	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Press Operator I	Sterling Heights, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	CNC Operator	Sterling Heights, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	CNC Operator-	Sterling Heights, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Lead Operator	Muncie, Indiana, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Ausbildung Fachkraft für Metalltechnik 2027  -Montagetechnik- m/w/x	Neuenstein, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Ausbildung Mechatroniker 2027 m/w/x	Neuenstein, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Ausbildung Industriemechaniker 2027 m/w/x	Neuenstein, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Product & Tooling Engineer - Group CCT Position	Telford, GB
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Tooling Engineer - Casting	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Die Casting Maintenance Technician - Casting	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Specialist - Competitive Intelligence & Benchmarking	Bengaluru, IN
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Process Engineer - Casting	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Production CAE Analyst	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	CNC Machinist	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Repair Welder - Cradles	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Controls Engineer	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Press Operator	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Toolmaker - MAP	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	MAP Team Leader	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Coatings Technician	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Machinist	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Die Setter/Mover (Crane/Forklift Operator)	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Expert Project Engineer, Propulsion	Jiading Qu, Shanghai, CN
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	KFZ-Techniker für die Werkstätte in Albersdorf (m/w/d)	Albersdorf, AT
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Magna Engineered Glass: Senior Tooling Engineer	Holland, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Paint Process Engineer	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Maintenance Weld Technician	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Manufacturing Engineer (WCM Engineer I)	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Crane Operator	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Dimensional Engineer	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Production Team Leader -2nd Shift PACCAR	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Quality Auditor	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	HR Recruiter	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Camera & Vision Systems Specialist	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Adhesive and Sealer Specialist	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Production Engineer	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Coatings Technician	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Project Engineer	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Staff Accountant	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	KFZ-Techniker für die Werkstätte in Graz (m/w/d)	Albersdorf, AT
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	KFZ-Karosseriebaumeister für die Werkstätte in Albersdorf	Albersdorf, AT
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	CNC Maintenance Technician - Casting	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Engineer Gearbox Housing Design	Bangalore, IN
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Environmental Specialist	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Engineer Gearbox Housing	Bengaluru, IN
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	2nd Shift Press Production Team Leader	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Mgr, Program (Division)	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Multi-craft Maintenance Technician 2nd/3rd	Piedmont, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Designer (Advanced)	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Tool & Die Technician - Casting	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Sr. Component Technical Lead	Lowell, Massachusetts, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Change Leader	Timisoara, RO
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Project Engineer	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Senior Design Release Engineer	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Master Scheduler	Newaygo, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Specialist Project Management	Bengaluru, IN
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Process Technician - 3rd Shift (11 PM - 7:30 AM)	Duncan, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	3rd Shift Molding Supervisor (11 PM - 7:30 AM)	Duncan, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Magna Engineered Glass: Program Manager	Holland, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Production Specialist (Operations)	Ceske Velenice, CZ
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Maintenance Tech- Off Shift	Ethridge, Tennessee, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Process Engineer	Changsha, Hunan, CN
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Business Development - Assembly Welding Specialist (m/f/x)	Ceske Velenice, CZ
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Billing Analyst, Business Services	Belgrade, RS
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Electrician (Certified) - 3rd Shift	Alto, Michigan, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Tool & Die Supervisor - 1st shift	Bowling Green, Ohio, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	PLC & Robot Programmer	Vecses, HU
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	EHS Engineer	Kechnec, SK
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Maintenance Apprentice-2	Muncie, Indiana, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Indirect Buyer (CAPEX)	Kechnec, SK
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Administrator - Data	Holland, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Journeyman/Mechanic - 3rd shift	Alto, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Electrician (Certified)	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Controller, Finance & Controlling	Belgrade, RS
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Millwright (Certified)	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Manufacturing Engineering Lead	Newaygo, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Operational Buyer	Holly, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Millwright (Certified)	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Cycle Counter	Duncan, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Payroll Specialist, German Payroll Shared Service Center (m/f/x)	Belgrade, RS
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Weld Specialist	Newmarket, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Eng, Supplier Quality	Carrollton, Georgia, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Specialist, Health & Safety	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Purchasing Director - Europe (m/f/d)	3 Locations
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Purchasing Manager	Holland, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Specialist Project Management	Bengaluru, IN
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Senior Program Manager	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Supplier Quality Engineer	Moore, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Manufacturing Engineer	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	SQD Seals Engineer	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Coord, Continuous Improvement	Newaygo, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	SQD Electronics Engineer	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Assistant Controller	Lancaster, Ohio, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Paint Process Engineering Group Leader	Guelph, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Toolroom Lead	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Team Leader - Assembly, K2 POOL	Birmingham, Alabama, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Warranty Engineer	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-exclude	Magna International	Warranty Analysis Lab Supervisor	Troy, Michigan, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Manufacturing Engineer- Moulding	Concord, Ontario, CA
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Junior Accounts Payable Associate, Accounting Shared Services	Belgrade, RS
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Junior Accounts Receivable Associate, Accounting Shared	Belgrade, RS
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	IT Specialist (m/f/x)	Vecses, HU
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Health & Safety Specialist	Vecses, HU
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Process Engineer - Hot Forming (m/f/x)	Vecses, HU
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Praktikum im Bereich Industrial Engineering (m/w/d)	Meerane, DE
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Production Engineer (m/f/x)	Vecses, HU
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Bachelor's Thesis „Geometry Database Creation for AI Model Training“	Graz, AT
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Human Resources Generalist	Moore, South Carolina, US
+2026-09-07T00:38:42+00:00	L1-not-student-role	Magna International	Estagiário de Manufatura	Ibirite, Minas Gerais, BR
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Automation Engineer - Senior	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Painter / Blaster - Night Shift	Norwich, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator - Day Shift	Salford, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Stainless Steel Welder - Day or Night Shift	Norwich, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Assembler - Night Shift	Norwich, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Manager, Robotics Engineering	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Clerk - Stores	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer – Automation and Product	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Tool Presetter	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Manufacturing	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Técnico de Medidas	Gomez Palacio, Mexico
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Material Handler	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Truck Driver - Short Distance	Livonia, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Senior Quality Engineer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Business Analyst, Intermediate	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Tool Presetter	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator Days	Norwich, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Setup Technician - Die Casting Magnesium	NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Tool Technician	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Setup Technician - Assembly	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator - Machining	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 2 - Maintenance Semi Skilled	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Process, Junior	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator - Die Casting	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 1 - Maintenance Labourer	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 4 - Maintenance Multi Skilled	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Coordinator - Materials	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	3rd Shift Production Supervisor	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Inspector - Level 2	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Welder	Cornelia, GA, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Automation Technician	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Project	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Welder - Day Shift	Salford, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Welder (Certified)	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Warehouse Person	West Chicago, IL, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Accountant, Senior	Albion, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Stockroom Attendant	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Line Setup	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Inspector - Level 1	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Design & Validation Engineer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Manager, Accounting	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Approvisionneur H/F	Laigneville, Hauts-de-France, France
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Production Supervisor	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Magasinier H/F CDD	Laigneville, Hauts-de-France, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Material Handler	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Engineer - Program Manager	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Welder - Night Shift	Salford, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Design, Junior	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Material Handler	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Human Resources Generalist	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Manufacturing Engineer	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Technician	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Desktop and System Support Technician, Junior	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	EHS Specialist (Designated)	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Process Technician	Muscle Shoals, AL, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Electrician	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Setup Technician	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Forklift Driver	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Junior Account Manager	Livonia, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Resident Engineer	Livonia, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Customer Service Representative	Salford, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Supervisor, Production	Albion, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Inspector - Level 3	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Coordinator - Materials	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Inspector - Level 1	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Die Setter	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Inspector - Level 2	Wilson, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Payroll Clerk	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Supervisor, Maintenance	Wilson, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Labourer - Level 1	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Controls Technician	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Human Resources Generalist	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Territory Manager	Osceola, IA, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Human Resources Assistant	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Material Handler	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Millwright	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Supervisor, Production	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Manufacturing	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer, Junior	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Clerk	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Coordinator - Materials	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Material Handler	Arden, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Engineer Technician	Arden, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Coordinator - Materials	Wilson, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 2 - Maintenance Semi Skilled	Arden, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Project Coordinator	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Tech 2	Southfield, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Inspector - Level 2	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Warehouse Shunt Driver	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Truck Driver - Long Distance	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Truck Driver - Long Distance	Windsor, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Owner Operator (AZ) – Cross-Border (Canada/USA)	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Engineer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	MRO Buyer	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Controls Engineer	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Heat Treat - Manufacturing Engineer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Welder - Fabricator	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	System Administrator, Senior	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Supervisor, General	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Clerk - Payroll	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	CNC Technician	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 3 - Maintenance - Certified Millwright	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Setup Technician (Straight Night Shift)	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Technician 1	Southfield, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Engineering Supervisor	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	General Labourer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	CNC Operator	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Service Representative	West Chicago, IL, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Director, Engineering	Livonia, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	CMM Programmer	Southfield, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Engineer	Southfield, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Senior Program Manager	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Material Handler	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Millwright	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Apprentice - Machinist	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Supervisor, Quality	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator	Arden, NC, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Supervisor, Production	Gomez Palacio, Mexico
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	CNC Operator	Avilla, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Mechanic 1	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Furnace Technician	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Customs Administrator	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Electrician	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Tool & Die Repair	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Robot Technician	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Manufacturing Engineer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 3 - Maintenance Fully Skilled	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Die Prep Technician 1	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Manager, Engineering - Design	Livonia, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Melt Technician	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineering Technician	Albion, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Technician 3	Avilla, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Material Handler	Avilla, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Engineer	Avilla, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Tool Presetter	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Program Manager	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Process	ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Customer Service Representative	Salford, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Casting Operator	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Manager, Quality	Muscle Shoals, AL, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Automation	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Customs Compliance Specialist	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 1 - Maintenance Labourer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Assembly Operator	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	CNC Technician	Southfield, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator - Melt Shop	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Apprentice - Millwright	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Weekend Maintenance Supervisor	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Automation Technician	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Process	Fletcher, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Controls	Muscle Shoals, AL, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Manager, Quality	Livonia, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Senior Process Engineer	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Stagiaire Maintenance	Laigneville, Hauts-de-France, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Inspector - Level 1	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	NDT Technician	Fruitport, MI, United States
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	IT Project Manager	Guelph, ON, Canada
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Controls Engineer	Arden, NC, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	OPERATEUR DE PRODUCTION (H/F)	Montfaucon-en-Velay, Auvergne-Rhone-Alpes, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	TECHNICIEN DE MAINTENANCE (H/F)	Montfaucon-en-Velay, Auvergne-Rhone-Alpes, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	CONDUCTEUR DE LIGNE (H/F)	Montfaucon-en-Velay, Auvergne-Rhone-Alpes, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Desktop and System Support Technician, Intermediate	Albion, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Elektroniker (m/w/d)	Germany
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance PM	Albion, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Technician	Albion, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Manufacturing	Albion, IN, United States
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Einrichter (m/w/d)	Reinsdorf b. Zwickau, Sachsen, Germany
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Mitarbeiter Instandhaltung	Crimmitschau, Sachsen, Germany
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Supervisor	Diors, Centre-Val de Loire, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Technician	Diors, Centre-Val de Loire, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Level 3 - Maintenance Fully Skilled	Saint-Chamond, Auvergne-Rhone-Alpes, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	General Machinist	Saint-Chamond, Auvergne-Rhone-Alpes, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	CNC Programmer	Ramos Arizpe, Mexico
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Technician	Ramos Arizpe, Mexico
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Design, Junior	Shanghai, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Project	Tianjin, Tianjin, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Quality Engineer	Chongqing, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Technician	Chongqing, China
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Account Manager - Sales	Wuxi, Jiangsu, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Technicien de Maintenance (F/H)	Laigneville, Hauts-de-France, France
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Superintendent, Production Plan & Control	Ramos Arizpe, Mexico
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Messmaschinenbediener (m/w/d)	Crimmitschau, Sachsen, Germany
+2026-09-07T00:38:45+00:00	L1-exclude	Linamar	Engineer - TS, Senior	Wuxi, Jiangsu, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Project	Wuxi, Jiangsu, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Manufacturing	Wuxi, Jiangsu, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Supplier Quality Engineer	Wuxi, Jiangsu, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Maintenance Technician	Wuxi, Jiangsu, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Engineer - Project	Wuxi, Jiangsu, China
+2026-09-07T00:38:45+00:00	L1-not-student-role	Linamar	Machine Operator - Junior	Wuxi, Jiangsu, China
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern Developer	Medellin, Antioquia, Colombia
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Embedded Software, Intern	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern, Information Technology	Milwaukee, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Credit Management Intern	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	EHS Co-op/ Intern	Cambridge, Ontario, Canada
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern, Continuous Improvement (LCS)	2 Locations
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern, Remote Support (LCS)	
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern, Market Intelligence (LCS)	Milwaukee, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern, Field Service (LCS)	4 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Intern, Technical Sales & Consulting (Canada)	4 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Intern, Technical Sales & Consulting (USA)	27 Locations
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern, Cyber Professional Services (LCS)	Mayfield Heights, Ohio, United States
+2026-09-07T00:38:55+00:00	L2-location	OTTO Motors (Rockwell)	Intern, Integrated Supply Chain and Manufacturing	7 Locations
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Intern, Content IDE Software Development (LCS)	Mayfield Heights, Ohio, United States
+2026-09-07T00:38:55+00:00	L2-location	OTTO Motors (Rockwell)	Co-op, Process Standardization & Delivery Automation (LCS)	2 Locations
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Co-op, Delivery - Projects (LCS)	Mayfield Heights, Ohio, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Product Compliance Project Engineer	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Logistics & Warehouse Supervisor	Ladysmith, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Global Account Manager	Tokyo, Japan
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Logistics Planner	Tokyo, Japan
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Hardware Development Engineer	Aarau, Aargau, Switzerland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Shipping coordinator	Bronderslev, Denmark
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	ERP Specialist	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Trade Compliance Specialist	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	EDGE, Technical Sales & Consulting: Technical Sales Specialist (US)	26 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Junior HR Services Specialist	Milano, Italy
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Team Lead - MV	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Project Manager - Hardware Development	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Team Lead Electrical	Pune, India
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	EDGE, Technical Sales & Consulting: Account Manager (US)	26 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	TRADE PLANNER	Tecate, Baja California, Mexico
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	EDGE Program, Technical Sales & Consulting: Account Manager (Canada)	5 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	EDGE, Technical Sales & Consulting: Technical Sales Specialist (Canada)	5 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Sourcing Engineer	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	FTZ Specialist	3 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Classification Specialist, Import/Export Compliance	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Trade Compliance Planner	Mexico City, Mexico
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Field Service Engineer	Caracas, Capital District, Venezuela
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Field Service Engineer - Medium Voltage	Caracas, Capital District, Venezuela
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Associate Firmware Engineer	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	AMR Safety Lead	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Project Manager	3 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Operation & Supply Chain Engineer (Leadership Development Program)	Tecate, Baja California, Mexico
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Proposal Consultant	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	AI-Augmented Collections Specialist	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Account Manager - End User	Kiln Farm, England, United Kingdom
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Global Real Estate Analyst	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	FTZ Lead	3 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Development Engineer	Bronderslev, Denmark
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	PLM- Solution Architect Manager	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Analyst Treasury, EMEA	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Test Manufacturing Engineer	Singapore Singapore (Corporation Road)
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	EDGE Program: Integrated Supply Chain (January 2027 Start)	6 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Mechanical Designer	Bronderslev, Denmark
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Sourcing Engineer	Bangkok, Thailand
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Sourcing Engineer	Kuala Lumpur, Malaysia
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	AMR Team Manager	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Datacenter Industry Consultant	4 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Executive Assistant / Office Administrator	Calgary, Alberta, Canada
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Technical Product Owner	Colombia Medellin (remote)
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Data Scientist	Milwaukee, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Manufacturing Engineer	Milwaukee, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Inbound Coordinator	Whitestown, Indiana, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Project Administrator	Bogota, Colombia
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Sales Support Representative	Mexico City, Mexico
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Manager Consultant	Abu Dhabi, United Arab Emirates
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Product Manager - Independent Cart Technology	3 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	EMEA Security Lead	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Quality Engineer - Manufacturing process	Kancheepuram, India
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Commodity  Manager	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Operations Quality Engineer	Mequon, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Proposal Consultant	6 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Account Development Manager - Datacenter	Houston, Texas, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	PROPOSAL ENGINEER	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Solution Consultant, AIOT	Shanghai, China
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Global Industry Technical Consultant, Data Center	7 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Global EPC Technical Consultant	10 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Proposal Specialist	Monterrey, Nuevo Leon, Mexico
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Quality and Manufacturing Engineer	Monterrey, Nuevo Leon, Mexico
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Product Compliance Engineer	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Team Leader (maternity cover)	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	PRODUCTION CONTROL ANALYST	Monterrey, Nuevo Leon, Mexico
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Project Administrator	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Associate Project Engineer (Electrical)	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Developer IFS Cloud	3 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Design Assurance Technician	Monterrey, Nuevo Leon, Mexico
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Financial Analyst	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Payroll Expert with Italian	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Payroll Specialist with Spanish	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Sr. Proposal Engineer	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Sr. Proposal Engineer	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	TECHNOLOGY CONSULTANT	Hawthorn, Victoria, Australia
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Manufacturing Project Manager	Monterrey, Nuevo Leon, Mexico
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Contracts Manager, North America	Mexico City, Mexico
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Real Estate Manager - EMEA	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Quality Supervisor	Kancheepuram, India
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Strategic Account Manager - Life Science	Seoul, South Korea
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	EMEA Senior Application Engineer	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	IBE Analyst	India New Delhi (Noida)
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Global Distributor Partner Manager	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	EDGE Associate, Information Technology Rotational Program	Milwaukee, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Ops Team Lead	Medellin, Antioquia, Colombia
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Agentic AI Operations Engineer	Medellin, Antioquia, Colombia
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Sales Consulting Lead, Autonomous Operations	Tokyo, Japan
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Privacy and Cyber Law Specialist	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Sub-region Contracts Manager, India	4 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Machine Operator	Chennai, India
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Machine operator 2	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Machine operator S3	Chennai, India
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	machine operator S3	Chennai, India
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Customer Co-Innovation Lead - AI & Autonomy	3 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Production Operator	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	PRODUCTION OPERATOR	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Production operator	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	PRODUCTION OPERATOR	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Operator Maszyn (k/m/n)	Szczecin, Poland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Operator CNC (k/m/n)	Szczecin, Poland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Operator CNC (M/F/D)	Szczecin, Poland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Operator CNC (M/F/D)	Szczecin, Poland
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Information Security Analyst	3 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Machine Operator 2 – 3rd Shift	Mequon, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Business Analyst – Sales Operations, Sales Incentive Process	Mexico City, Mexico
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Machine Operator Level 1P - 1st shift	Cambridge, Ontario, Canada
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Machine Operator 3P- 2nd shift	Cambridge, Ontario, Canada
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	IAM UI Engineer	2 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	SI Manager	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Machine Operator Level 2P - 1st shift	Cambridge, Ontario, Canada
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior BI Analyst	Bogota, Colombia
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	DevOps Engineer	Medellin, Antioquia, Colombia
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	AI Engineer	Medellin, Antioquia, Colombia
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Assembler (Powder coating,Drilling/tapping)	Chennai, India
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Business Systems Analyst- SAP Commerce Cloud (Hybris)	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Planning -Lead	Kancheepuram, India
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Controls Engineer	Twinsburg, Ohio, United States
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Commodity Manager	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Quality Controller	Szczecin, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Channel & System Integrator Account Manager	3 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Quality Control Inspector	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Production Control Analyst	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Continuous Improvement Technician	Santo Domingo, Dominican Republic
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Powder coater - Machinist III	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Production Control and Logistics Specialist	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Strategic Architect	4 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Account Manager OEM	4 Locations
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Industrialization Planner	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Master Production Scheduler	Chennai, India
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Materials Program Team Lead	Milwaukee, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Master Production Scheduler	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	FACTORED GLOBAL PLANNER-BUYER	Monterrey, Nuevo Leon, Mexico
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Supplier Quality Engineer	Bangkok, Thailand
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Technology Consultant, Software & Control	Sydney, New South Wales, Australia
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Application Consultant, O&G	Rio de Janeiro, Brazil
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Application Consultant	Caracas, Capital District, Venezuela
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Product Configuration Engineer	Tecate, Baja California, Mexico
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Automation Controls, Customer Support	Orlando, Florida, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Component Engineer – Wiring and Connection Systems	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Product Configuration Engineer	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Business Unit Lead - Software & Control	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Contract Administrator	2 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Engineer, Embedded Software Test - Python (maternity cover)	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Project Manager, Supply Chain	Katowice, Poland
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Senior Sourcing Engineer	Singapore, Singapore
+2026-09-07T00:38:55+00:00	L1-exclude	OTTO Motors (Rockwell)	Strategic Account Manager- Data Centers	4 Locations
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Testing Engineer	Artegna, Italy
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	QUALITY ENGINEER	Cambridge, Ontario, Canada
+2026-09-07T00:38:55+00:00	L1-wrong-discipline	OTTO Motors (Rockwell)	Student Youth Apprentice	Richland Center, Wisconsin, United States
+2026-09-07T00:38:55+00:00	L1-not-student-role	OTTO Motors (Rockwell)	Finance Leadership Development Program	Katowice, Poland
+2026-09-07T00:38:56+00:00	L1-exclude	Miovision	Enterprise Account Executive, Opticom Solutions (Southeastern USA)	Southeastern USA
+2026-09-07T00:38:56+00:00	L1-not-student-role	Miovision	VP, Hardware Engineering	Kitchener
+2026-09-07T00:38:56+00:00	L1-exclude	Miovision	Senior Product Manager	Canada Remote
+2026-09-07T00:38:56+00:00	L1-not-student-role	Miovision	IT Systems Administrator	Kitchener
+2026-09-07T00:38:56+00:00	L1-not-student-role	Miovision	Software Developer II	United States
+2026-09-07T00:38:56+00:00	L1-exclude	Miovision	Senior Software Developer, API Platform	Canada Remote
+2026-09-07T00:38:56+00:00	L1-exclude	Miovision	Demand Generation Marketing Manager	Kitchener
+2026-09-07T00:38:56+00:00	L1-exclude	Miovision	Senior Product Manager, Devices	Canada Remote
+2026-09-07T00:38:56+00:00	L1-exclude	Miovision	Sr. Manager, Marketing Operations & Analytics	Canada Remote
+2026-09-07T00:38:56+00:00	L1-exclude	Miovision	Senior Counsel - IP, Product and Privacy	Canada Remote
+2026-09-07T00:38:56+00:00	L1-not-student-role	Miovision	Full Stack Software Developer	Canada Remote
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Lexus Area Parts & Service Manager - Quebec Zone	Toyota Canada Inc - Quebec Zone
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Manager, Toyota Product Planning	Toyota Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Project Manager	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-wrong-discipline	Toyota Motor Manufacturing Canada	Internal Audit Analyst	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Toyota and Lexus Brand Manager	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Area Parts & Service Manager - Atlantic Zone	Toyota Canada Inc - Atlantic Office
+2026-09-07T00:38:56+00:00	L1-not-student-role	Toyota Motor Manufacturing Canada	Communications Specialist	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Bilingual Senior Credit Analyst / Analyste de crédit principal bilingue	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-not-student-role	Toyota Motor Manufacturing Canada	Operational Excellence Analyst	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Business Reliability and IT Ops Manager	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Bilingual Senior Customer Accounts Specialist	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-not-student-role	Toyota Motor Manufacturing Canada	Customer Experience Analyst	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Manager, Business Innovation	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-not-student-role	Toyota Motor Manufacturing Canada	Business Data Steward	Toyota Credit Canada Inc - Head Office
+2026-09-07T00:38:56+00:00	L1-exclude	Toyota Motor Manufacturing Canada	Senior Financial Analyst – Vehicles & Consolidation	Toyota Canada Inc - Head Office
+2026-09-07T00:38:57+00:00	L1-not-student-role	Honda Canada	Legal Counsel	Markham, Ontario
+2026-09-07T00:38:57+00:00	L1-not-student-role	Honda Canada	Bilingual Credit Analyst	Boucherville, Quebec
+2026-09-07T00:38:57+00:00	L1-not-student-role	Honda Canada	Bilingual Credit Analyst	Markham, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Honda Canada	Sales Lead, Accessories and Retail Parts	Markham, Ontario
+2026-09-07T00:38:57+00:00	L1-not-student-role	Honda Canada	Specialist, Fleet	Markham, Ontario
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Field Service Engineer	
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Manager, Global Events & Medical Education	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Senior RF Electrical Developer	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Capital Sales Executive	
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Clinical Product Expert 	
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Manager, Supply Chain & Logistics	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Capital Sales Executive	
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Mechatronics Developer	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Capital Sales Executive	
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Capital Sales Executive	
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Capital Sales Executive	
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Senior Software Developer	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Marketing Communications Specialist	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Clinical Research Associate	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Senior Electrical Developer	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Quality Manager, Production	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-exclude	Profound Medical	Strategic Account Manager	
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Clinical Product Expert 	
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Marketing Coordinator, Meetings, and Events	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	FP&A Analyst	Mississauga, Ontario
+2026-09-07T00:38:57+00:00	L1-not-student-role	Profound Medical	Payroll & HR Systems Specialist	Mississauga, Ontario
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Emergency Service Maintainer - Future Opportunities	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Appendix A Hiring Hall - Buyer Analyst I	Bruce Power
+2026-09-07T00:38:58+00:00	L1-exclude	Bruce Power	Recruiter (Talent Acquisition) - Future Opportunity	Bruce Power
+2026-09-07T00:38:58+00:00	L1-exclude	Bruce Power	Senior Information Systems Analyst (Future Opportunity)	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Contract Administrator - New Build (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Contract Specialist - New Build (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-exclude	Bruce Power	Senior Strategist - New Build (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Risk Specialist/Risk Lead (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-exclude	Bruce Power	Project Manager/Project Lead (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Project Controls Lead (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Project Coordinator/Program Coordinator (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Project Controls - Cost (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Project Controls - Schedule/Planner (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Estimator (Contract) Talent Pool	Bruce Power
+2026-09-07T00:38:58+00:00	L1-not-student-role	Bruce Power	Work Management Coordinator (Contract) Talent Pool	Bruce Power
