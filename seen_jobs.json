@@ -3,48 +3,48 @@
   "Bruce Power": {
    "consecutive_empty": 0,
    "last_count": 18,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "Honda Canada": {
    "consecutive_empty": 0,
    "last_count": 9,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
    "last_count": 192,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
    "last_count": 262,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
    "last_count": 15,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "Multimatic": {
    "consecutive_empty": 0,
    "last_count": 114,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "OTTO Motors (Rockwell)": {
    "consecutive_empty": 0,
-   "last_count": 167,
+   "last_count": 166,
    "last_error": "2026-08-24T13:45:50+00:00: ReadTimeout: HTTPSConnectionPool(host='rockwellautomation.wd1.myworkdayjobs.com', port=443): Read timed out. (read timeout=20)",
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
    "last_count": 21,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_success": "2026-09-12T13:49:41+00:00"
   },
   "Toyota Motor Manufacturing Canada": {
    "consecutive_empty": 0,
-   "last_count": 13,
-   "last_success": "2026-09-12T00:50:45+00:00"
+   "last_count": 12,
+   "last_success": "2026-09-12T13:49:41+00:00"
   }
  },
  "jobs": {
