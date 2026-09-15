@@ -3,48 +3,48 @@
   "Bruce Power": {
    "consecutive_empty": 0,
    "last_count": 18,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "Honda Canada": {
    "consecutive_empty": 0,
    "last_count": 9,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
    "last_count": 186,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
    "last_count": 260,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "Multimatic": {
    "consecutive_empty": 0,
    "last_count": 110,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "OTTO Motors (Rockwell)": {
    "consecutive_empty": 0,
    "last_count": 166,
    "last_error": "2026-08-24T13:45:50+00:00: ReadTimeout: HTTPSConnectionPool(host='rockwellautomation.wd1.myworkdayjobs.com', port=443): Read timed out. (read timeout=20)",
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
    "last_count": 22,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_success": "2026-09-15T23:22:05+00:00"
   },
   "Toyota Motor Manufacturing Canada": {
    "consecutive_empty": 0,
-   "last_count": 12,
-   "last_success": "2026-09-15T19:56:58+00:00"
+   "last_count": 13,
+   "last_success": "2026-09-15T23:22:05+00:00"
   }
  },
  "jobs": {
@@ -58,6 +58,7 @@
   "Magna International::R00252235": "2026-08-13T05:20:29+00:00",
   "Magna International::R00252658": "2026-08-13T05:20:29+00:00",
   "Magna International::R00259404": "2026-09-02T14:54:21+00:00",
+  "Magna International::R00260040": "2026-09-15T23:22:05+00:00",
   "Multimatic::JR103258": "2026-08-13T05:20:29+00:00",
   "Multimatic::JR103350": "2026-08-13T05:20:29+00:00",
   "Multimatic::JR103464": "2026-09-10T17:59:47+00:00",
@@ -73,7 +74,8 @@
   "alt::c5805705f75abcb5": "2026-08-13T05:20:29+00:00",
   "alt::cf7b8d32cba0c04e": "2026-08-13T05:20:29+00:00",
   "alt::d7662e35487e798c": "2026-08-13T05:20:29+00:00",
-  "alt::eeb99e135357382c": "2026-09-10T17:59:47+00:00"
+  "alt::eeb99e135357382c": "2026-09-10T17:59:47+00:00",
+  "alt::f5b33db1e2120d19": "2026-09-15T23:22:05+00:00"
  },
  "seeded": true
 }
