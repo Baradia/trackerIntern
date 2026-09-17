@@ -3,48 +3,48 @@
   "Bruce Power": {
    "consecutive_empty": 0,
    "last_count": 18,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "Honda Canada": {
    "consecutive_empty": 0,
    "last_count": 10,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
-   "last_count": 217,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_count": 216,
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
-   "last_count": 261,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_count": 260,
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
-   "last_count": 16,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_count": 15,
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "Multimatic": {
    "consecutive_empty": 0,
    "last_count": 111,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "OTTO Motors (Rockwell)": {
    "consecutive_empty": 0,
-   "last_count": 169,
+   "last_count": 168,
    "last_error": "2026-08-24T13:45:50+00:00: ReadTimeout: HTTPSConnectionPool(host='rockwellautomation.wd1.myworkdayjobs.com', port=443): Read timed out. (read timeout=20)",
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
    "last_count": 22,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_success": "2026-09-17T19:58:00+00:00"
   },
   "Toyota Motor Manufacturing Canada": {
    "consecutive_empty": 0,
-   "last_count": 12,
-   "last_success": "2026-09-17T15:24:40+00:00"
+   "last_count": 14,
+   "last_success": "2026-09-17T19:58:00+00:00"
   }
  },
  "jobs": {
@@ -62,8 +62,10 @@
   "Multimatic::JR103258": "2026-08-13T05:20:29+00:00",
   "Multimatic::JR103350": "2026-08-13T05:20:29+00:00",
   "Multimatic::JR103464": "2026-09-10T17:59:47+00:00",
+  "OTTO Motors (Rockwell)::R26-6732": "2026-09-17T19:58:00+00:00",
   "alt::00c67c8b0f0143cf": "2026-08-13T05:20:29+00:00",
   "alt::00dc747a3b776a7d": "2026-08-13T05:20:29+00:00",
+  "alt::04c69da146da0d1f": "2026-09-17T19:58:00+00:00",
   "alt::0a62b91d65dfe0b1": "2026-09-02T14:54:21+00:00",
   "alt::322d94a953da13ab": "2026-08-13T05:20:29+00:00",
   "alt::3df57b5c310b8c31": "2026-08-13T05:20:29+00:00",
