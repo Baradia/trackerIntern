@@ -3,48 +3,48 @@
   "Bruce Power": {
    "consecutive_empty": 0,
    "last_count": 18,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "Honda Canada": {
    "consecutive_empty": 0,
    "last_count": 10,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
    "last_count": 216,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
    "last_count": 260,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
    "last_count": 15,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "Multimatic": {
    "consecutive_empty": 0,
    "last_count": 111,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "OTTO Motors (Rockwell)": {
    "consecutive_empty": 0,
-   "last_count": 168,
+   "last_count": 169,
    "last_error": "2026-08-24T13:45:50+00:00: ReadTimeout: HTTPSConnectionPool(host='rockwellautomation.wd1.myworkdayjobs.com', port=443): Read timed out. (read timeout=20)",
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
    "last_count": 22,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   },
   "Toyota Motor Manufacturing Canada": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-09-17T19:58:00+00:00"
+   "last_success": "2026-09-17T23:20:00+00:00"
   }
  },
  "jobs": {
@@ -63,6 +63,7 @@
   "Multimatic::JR103350": "2026-08-13T05:20:29+00:00",
   "Multimatic::JR103464": "2026-09-10T17:59:47+00:00",
   "OTTO Motors (Rockwell)::R26-6732": "2026-09-17T19:58:00+00:00",
+  "OTTO Motors (Rockwell)::R26-6872": "2026-09-17T23:20:00+00:00",
   "alt::00c67c8b0f0143cf": "2026-08-13T05:20:29+00:00",
   "alt::00dc747a3b776a7d": "2026-08-13T05:20:29+00:00",
   "alt::04c69da146da0d1f": "2026-09-17T19:58:00+00:00",
@@ -77,6 +78,7 @@
   "alt::cf7b8d32cba0c04e": "2026-08-13T05:20:29+00:00",
   "alt::d7662e35487e798c": "2026-08-13T05:20:29+00:00",
   "alt::eeb99e135357382c": "2026-09-10T17:59:47+00:00",
+  "alt::f32514fbe0206642": "2026-09-17T23:20:00+00:00",
   "alt::f5b33db1e2120d19": "2026-09-15T23:22:05+00:00"
  },
  "seeded": true
