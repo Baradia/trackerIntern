@@ -362,7 +362,43 @@ companies:
     token: meshopticaltechnologies
     tier: watchlist
 
-  - name: Harbinger Motors
-    ats: greenhouse
-    token: harbingermotors
+  # Nokia: branded host jobs.nokia.com does not serve the Oracle REST API.
+  # Need the underlying fa-*.oraclecloud.com host: open jobs.nokia.com,
+  # F12 > Network > XHR > reload, find the recruitingCEJobRequisitions call,
+  # and put its hostname in 'host:'.
+  - name: Nokia
+    ats: oracle
+    host: jobs.nokia.com
+    site: CX_1
     tier: watchlist
+    enabled: false
+
+  - name: Leonardo DRS
+    ats: successfactors
+    base: https://careers.leonardodrs.com
+    tier: watchlist
+
+  # Arcadis: Eightfold. API returns 403 even with browser headers - likely
+  # needs a session cookie. Park for capture.py, or check the network tab
+  # for the exact 'domain' value the page sends.
+  - name: Arcadis
+    ats: eightfold
+    host: jobs.arcadis.com
+    domain: arcadis.com
+    tier: watchlist
+    enabled: false
+
+  - name: Teledyne FLIR
+    ats: workday
+    tenant: flir
+    wd: wd1
+    site: flircareers
+    tier: watchlist
+
+  - name: Stryker
+    ats: workday
+    tenant: stryker
+    wd: wd1
+    site: StrykerCareers
+    tier: watchlist
+

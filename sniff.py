@@ -38,6 +38,23 @@ SIGNATURES = [
     ("prevue",          r"prevueaps\.com"),
 ]
 
+# common places a careers page lives, tried in order
+GUESS_PATHS = ["/careers", "/careers/", "/jobs", "/jobs/", "/company/careers",
+               "/about/careers", "/en/careers", "/careers/open-positions",
+               "/careers/jobs"]
+GUESS_HOSTS = ["careers.{d}", "jobs.{d}", "www.{d}", "{d}"]
+
+
+def guess_urls(domain):
+    d = domain.replace("https://", "").replace("http://", "").strip("/")
+    d = d.replace("www.", "")
+    urls = []
+    for h in GUESS_HOSTS[:2]:
+        urls.append(f"https://{h.format(d=d)}/")
+    for p in GUESS_PATHS:
+        urls.append(f"https://www.{d}{p}")
+    return urls
+
 
 def sniff(url):
     try:
@@ -68,9 +85,44 @@ def sniff(url):
             print(f"    {a}")
 
 
+def guess(domain):
+    """Try common careers URLs for a bare domain, stop at the first that
+    fingerprints an ATS."""
+    print(f"\n=== {domain}  (guessing careers URL)")
+    best = None
+    for u in guess_urls(domain):
+        try:
+            r = requests.get(u, headers={"User-Agent": UA}, timeout=15,
+                             allow_redirects=True)
+        except Exception:
+            continue
+        if r.status_code != 200 or len(r.text) < 2000:
+            continue
+        hits = [n for n, rx in SIGNATURES
+                if re.search(rx, r.text, re.I) or re.search(rx, r.url, re.I)]
+        if hits:
+            print(f"  {u}")
+            print(f"  final url : {r.url}")
+            print(f"  ATS       : {', '.join(hits)}")
+            return
+        best = best or (u, r.url)
+    if best:
+        print(f"  reachable but no fingerprint: {best[1]}")
+        print("  -> JS-rendered; try capture.py on that URL")
+    else:
+        print("  no careers page found at the usual paths - find it manually")
+
+
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        sys.exit("usage: python sniff.py <careers-url> [more urls...]")
-    for u in sys.argv[1:]:
-        print(f"\n=== {u}")
-        sniff(u)
+    ap = __import__("argparse").ArgumentParser()
+    ap.add_argument("targets", nargs="+",
+                    help="full careers URLs, or bare domains with --guess")
+    ap.add_argument("--guess", action="store_true",
+                    help="treat targets as domains and try common careers paths")
+    a = ap.parse_args()
+    for t in a.targets:
+        if a.guess:
+            guess(t)
+        else:
+            print(f"\n=== {t}")
+            sniff(t)

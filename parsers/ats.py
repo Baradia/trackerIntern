@@ -341,11 +341,56 @@ def successfactors(cfg, ua):
     return out
 
 
+
+# --------------------------------------------------------------------------
+# Eightfold AI   careers page: jobs.<company>.com/careers?query=&pid=...
+#   host:   jobs.arcadis.com
+#   domain: arcadis.com   (the 'domain' query param, usually the corp domain)
+# --------------------------------------------------------------------------
+def eightfold(cfg, ua):
+    host = cfg["host"].replace("https://", "").rstrip("/")
+    domain = cfg.get("domain") or host.replace("jobs.", "")
+    out, start, num = [], 0, 100
+
+    browser = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+               "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+    extra = {"Accept": "application/json",
+             "Referer": f"https://{host}/careers",
+             "Origin": f"https://{host}"}
+
+    while start < 2000:
+        url = (f"https://{host}/api/apply/v2/jobs?domain={domain}"
+               f"&start={start}&num={num}&query=&sort_by=relevance")
+        data = _retry(lambda: requests.get(
+            url, headers={"User-Agent": browser, **extra}, timeout=TIMEOUT))
+        items = data.get("positions") or data.get("jobs") or []
+        for j in items:
+            jid = str(j.get("id") or j.get("pid") or "")
+            loc = (j.get("location")
+                   or ", ".join(j.get("locations") or [])
+                   or "")
+            out.append({
+                "id": jid,
+                "title": j.get("name") or j.get("title", ""),
+                "location": loc,
+                "url": (j.get("canonicalPositionUrl")
+                        or f"https://{host}/careers?pid={jid}"),
+                "description": j.get("job_description", "") or "",
+            })
+        total = data.get("count") or data.get("total") or 0
+        start += len(items)
+        if not items or (total and start >= total) or len(items) < num:
+            break
+        time.sleep(0.4)
+    return out
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
     "bamboohr": bamboohr,
     "successfactors": successfactors,
+    "eightfold": eightfold,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,
