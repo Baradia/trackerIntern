@@ -8,7 +8,10 @@ title:
   exclude: "senior|sr\\.|staff|principal|manager|director|supervisor|lead engineer|nurse|sales|recruiter|account executive"
 
   # must also look mechanical-adjacent
-  discipline: "mechanical|manufactur|design|CNC|machin|CAD|SolidWorks|CATIA|thermal|HVAC|mechatron|robotic|automation|process|product|R&D|test|quality|tooling|weld|fabricat|structural|engineer"
+  # Widened after reviewing rejected.log: assembly/e-coat/WCM/warranty
+  # co-ops in Ontario were being killed here. Broadening is cheap because
+  # the location layer runs next and catches the foreign postings.
+  discipline: "mechanical|manufactur|design|CNC|machin|CAD|SolidWorks|CATIA|thermal|HVAC|mechatron|robotic|automation|process|product|R&D|test|quality|tooling|weld|fabricat|structural|engineer|assembly|e-?coat|paint|coating|WCM|world class|warranty|maintenance|industrial|technician|technologist|controls|plant|operations|lean|continuous improvement|press|stamping|mold|mould|die |metrology|CAM|millwright|skilled trade|tool and die|materials|supply chain|logistics"
 
 location:
   # substring match, case-insensitive
@@ -53,6 +56,73 @@ location:
     - san diego
     - newark
     - foster city
+    # --- BC and Alberta, major centres only
+    - vancouver
+    - burnaby
+    - richmond
+    - surrey
+    - coquitlam
+    - delta
+    - langley
+    - victoria
+    - calgary
+    - edmonton
+    # --- United States, all of it. Eligibility gets sorted out later; the
+    # point is to see the posting. Tagged as us_sponsorship, never killed.
+    - united states
+    - ", us"
+    - ", tx"
+    - ", mi"
+    - ", ny"
+    - ", oh"
+    - alabama
+    - alaska
+    - arizona
+    - arkansas
+    - colorado
+    - connecticut
+    - delaware
+    - florida
+    - hawaii
+    - idaho
+    - illinois
+    - indiana
+    - iowa
+    - kansas
+    - kentucky
+    - louisiana
+    - maine
+    - maryland
+    - massachusetts
+    - michigan
+    - minnesota
+    - mississippi
+    - missouri
+    - montana
+    - nebraska
+    - nevada
+    - new hampshire
+    - new jersey
+    - new mexico
+    - new york
+    - north carolina
+    - north dakota
+    - ohio
+    - oklahoma
+    - oregon
+    - pennsylvania
+    - rhode island
+    - south carolina
+    - south dakota
+    - tennessee
+    - texas
+    - utah
+    - vermont
+    - virginia
+    - washington
+    - wisconsin
+    - wyoming
+    - georgia
   # keep postings with a blank location rather than silently dropping them
   allow_unknown: true
 
@@ -75,11 +145,14 @@ score:
     "SolidWorks|CAD|CATIA": 2
     "CNC|machining|sheet metal": 3
     "manufactur|production": 1
+    "assembly|e-?coat|paint|coating|stamping|weld": 1
+    "WCM|lean|continuous improvement": 1
     "HVAC|thermal": 1
     "first year|1st year|any year|all years": 3
     "Winter 2027|W2027|January 2027": 2
   tags:
-    us_sponsorship: -2
+    # us_sponsorship deliberately carries no penalty - still tagged so you can
+    # see it, but it no longer pushes the posting down the list
     grad_only: -3
     upper_year: -1
     security_clearance: -1

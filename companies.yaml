@@ -28,8 +28,6 @@ companies:
     tenant: magna
     site: Magna
     tier: ontario
-    search_terms: [intern, co-op, coop, student]
-    max_pages_per_term: 5
 
   - name: Linamar
     ats: oracle
@@ -44,13 +42,10 @@ companies:
     tier: ontario
     enabled: false
 
-  # jobs.atsautomation.com is a custom domain - check the network tab to see
-  # which ATS sits behind it, then set ats/token accordingly
   - name: ATS Corporation
-    ats: custom
-    handler: atsautomation
+    ats: successfactors
+    base: https://jobs.atsautomation.com
     tier: ontario
-    enabled: false
 
   - name: OTTO Motors (Rockwell)
     ats: workday
@@ -58,8 +53,6 @@ companies:
     wd: wd1
     site: External_Rockwell_Automation
     tier: ontario
-    search_terms: [intern, co-op, coop, student]
-    max_pages_per_term: 5
 
   - name: Miovision
     ats: ashby
@@ -89,19 +82,15 @@ companies:
     site: Honda_Canada
     tier: ontario
 
-  # TODO custom domain jobs.dana.com
   - name: Dana Incorporated
-    ats: custom
-    handler: dana_incorporated
+    ats: successfactors
+    base: https://jobs.dana.com
     tier: ontario
-    enabled: false
 
-  # TODO embedded widget on armstrongfluidtechnology.com
   - name: Armstrong Fluid Technology
-    ats: custom
-    handler: armstrong_fluid_technology
+    ats: bamboohr
+    token: armstrongfluidtechnology
     tier: ontario
-    enabled: false
 
   # TODO careers.tranetechnologies.com
   - name: Trane Technologies
@@ -124,12 +113,11 @@ companies:
     tier: ontario
     enabled: false
 
-  # TODO SuccessFactors: najobs.arcelormittal.com/dofasco
   - name: ArcelorMittal Dofasco
-    ats: custom
-    handler: arcelormittal_dofasco
+    ats: successfactors
+    base: https://najobs.arcelormittal.com
+    prefix: /dofasco
     tier: ontario
-    enabled: false
 
   # TODO embedded widget on wsp.com
   - name: WSP
@@ -270,7 +258,6 @@ companies:
     ats: greenhouse
     token: lucidmotors
     tier: california
-    enabled: false
 
   - name: Zoox
     ats: greenhouse
@@ -292,7 +279,6 @@ companies:
     wd: wd1
     site: External
     tier: california
-    enabled: false
 
   - name: AMD
     ats: workday
@@ -323,3 +309,55 @@ companies:
     handler: apple
     tier: california
     enabled: false
+
+  # ===================== WATCHLIST (probe.py hits) ======================
+  # Found by token brute-force; all returned real job counts.
+  - name: Formlabs
+    ats: greenhouse
+    token: formlabs
+    tier: watchlist
+
+  - name: Fab2
+    ats: ashby
+    token: fab2
+    tier: watchlist
+
+  - name: Verkada
+    ats: greenhouse
+    token: verkada
+    tier: watchlist
+
+  - name: Odys Aviation
+    ats: ashby
+    token: odys-aviation
+    tier: watchlist
+
+  - name: Neuralink
+    ats: greenhouse
+    token: neuralink
+    tier: watchlist
+
+  - name: 1X
+    ats: ashby
+    token: 1x
+    tier: watchlist
+
+  - name: Solcoa Industries
+    ats: ashby
+    token: solcoa
+    tier: watchlist
+
+  - name: Heron Power
+    ats: ashby
+    token: heron-power
+    tier: watchlist
+
+  - name: Etched
+    ats: ashby
+    token: etched
+    tier: watchlist
+
+  - name: Mesh Optical Technologies
+    ats: greenhouse
+    token: meshopticaltechnologies
+    tier: watchlist

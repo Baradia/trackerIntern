@@ -12,25 +12,40 @@ for jobs that are new and have already survived the title/location filters.
 import time
 import requests
 
-TIMEOUT = 20
+TIMEOUT = 30
+RETRIES = 3
+
+
+def _retry(fn):
+    """Transient timeouts are common on big boards; one blip should not take
+    a whole company out for the run."""
+    last = None
+    for attempt in range(RETRIES):
+        try:
+            r = fn()
+            r.raise_for_status()
+            return r.json()
+        except requests.exceptions.HTTPError:
+            raise
+        except Exception as e:
+            last = e
+            time.sleep(2 * (attempt + 1))
+    raise last
 
 
 def _get(url, ua, **kw):
-    r = requests.get(url, headers={"User-Agent": ua}, timeout=TIMEOUT, **kw)
-    r.raise_for_status()
-    return r.json()
+    return _retry(lambda: requests.get(
+        url, headers={"User-Agent": ua}, timeout=TIMEOUT, **kw))
 
 
 def _post(url, ua, payload):
-    r = requests.post(
+    return _retry(lambda: requests.post(
         url,
         headers={"User-Agent": ua, "Content-Type": "application/json",
                  "Accept": "application/json"},
         json=payload,
         timeout=TIMEOUT,
-    )
-    r.raise_for_status()
-    return r.json()
+    ))
 
 
 # --------------------------------------------------------------------------
@@ -277,10 +292,60 @@ def bamboohr(cfg, ua):
     return out
 
 
+
+# --------------------------------------------------------------------------
+# SAP SuccessFactors career sites (server-rendered HTML, no JSON API)
+#   base:   https://jobs.dana.com
+#   prefix: optional sub-path, e.g. /dofasco for ArcelorMittal
+# --------------------------------------------------------------------------
+def successfactors(cfg, ua):
+    from bs4 import BeautifulSoup
+
+    base = cfg["base"].rstrip("/")
+    prefix = cfg.get("prefix", "").rstrip("/")
+    step = int(cfg.get("step", 25))
+    out, startrow, pages = [], 0, 0
+
+    while pages < 40:
+        url = f"{base}{prefix}/search/?q=&startrow={startrow}"
+        r = requests.get(url, headers={"User-Agent": ua}, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        rows = soup.select("tr.data-row") or soup.select("li.job-tile")
+        if not rows:
+            break
+
+        for row in rows:
+            a = row.select_one("a.jobTitle-link") or row.select_one("a")
+            if not a or not a.get("href"):
+                continue
+            href = a["href"]
+            link = href if href.startswith("http") else base + href
+            locs = [e.get_text(" ", strip=True)
+                    for e in row.select(".jobLocation, .job-location")]
+            out.append({
+                "id": link.rstrip("/").split("/")[-1] or link,
+                "title": a.get_text(" ", strip=True),
+                "location": "; ".join(l for l in locs if l),
+                "url": link,
+                "description": "",
+            })
+
+        if len(rows) < step:
+            break
+        startrow += step
+        pages += 1
+        time.sleep(0.4)
+
+    return out
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
     "bamboohr": bamboohr,
+    "successfactors": successfactors,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,
