@@ -362,6 +362,11 @@ companies:
     token: meshopticaltechnologies
     tier: watchlist
 
+  - name: Harbinger Motors
+    ats: greenhouse
+    token: harbingermotors
+    tier: watchlist
+
   # Nokia: branded host jobs.nokia.com does not serve the Oracle REST API.
   # Need the underlying fa-*.oraclecloud.com host: open jobs.nokia.com,
   # F12 > Network > XHR > reload, find the recruitingCEJobRequisitions call,
