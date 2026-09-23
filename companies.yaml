@@ -361,3 +361,8 @@ companies:
     ats: greenhouse
     token: meshopticaltechnologies
     tier: watchlist
+
+  - name: Harbinger Motors
+    ats: greenhouse
+    token: harbingermotors
+    tier: watchlist
