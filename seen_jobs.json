@@ -3,150 +3,150 @@
   "1X": {
    "consecutive_empty": 0,
    "last_count": 92,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "ATS Corporation": {
    "consecutive_empty": 0,
    "last_count": 135,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Applied Materials": {
    "consecutive_empty": 0,
    "last_count": 2000,
    "last_error": "2026-09-23T19:56:11+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "ArcelorMittal Dofasco": {
    "consecutive_empty": 0,
    "last_count": 2,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Armstrong Fluid Technology": {
    "consecutive_empty": 0,
-   "last_count": 151,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_count": 150,
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Bruce Power": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Dana Incorporated": {
    "consecutive_empty": 0,
-   "last_count": 347,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_count": 346,
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Etched": {
    "consecutive_empty": 0,
    "last_count": 109,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Fab2": {
    "consecutive_empty": 0,
    "last_count": 61,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Formlabs": {
    "consecutive_empty": 0,
-   "last_count": 212,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_count": 209,
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Harbinger Motors": {
    "consecutive_empty": 0,
    "last_count": 99,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Heron Power": {
    "consecutive_empty": 0,
    "last_count": 37,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Honda Canada": {
    "consecutive_empty": 0,
    "last_count": 9,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Leonardo DRS": {
    "consecutive_empty": 0,
    "last_count": 372,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
-   "last_count": 222,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_count": 223,
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Lucid Motors": {
    "consecutive_empty": 0,
-   "last_count": 436,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_count": 434,
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
    "last_count": 1482,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Mesh Optical Technologies": {
    "consecutive_empty": 0,
    "last_count": 29,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
    "last_count": 19,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Multimatic": {
    "consecutive_empty": 0,
    "last_count": 120,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Neuralink": {
    "consecutive_empty": 0,
    "last_count": 81,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "OTTO Motors (Rockwell)": {
    "consecutive_empty": 0,
-   "last_count": 415,
+   "last_count": 422,
    "last_error": "2026-08-24T13:45:50+00:00: ReadTimeout: HTTPSConnectionPool(host='rockwellautomation.wd1.myworkdayjobs.com', port=443): Read timed out. (read timeout=20)",
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Odys Aviation": {
    "consecutive_empty": 0,
    "last_count": 13,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
    "last_count": 22,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Solcoa Industries": {
    "consecutive_empty": 0,
    "last_count": 9,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Stryker": {
    "consecutive_empty": 0,
-   "last_count": 1471,
+   "last_count": 1469,
    "last_error": "2026-09-25T15:42:30+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs",
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Teledyne FLIR": {
    "consecutive_empty": 0,
    "last_count": 764,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Toyota Motor Manufacturing Canada": {
    "consecutive_empty": 0,
    "last_count": 11,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   },
   "Verkada": {
    "consecutive_empty": 0,
    "last_count": 304,
-   "last_success": "2026-09-28T18:21:27+00:00"
+   "last_success": "2026-09-28T23:37:34+00:00"
   }
  },
  "jobs": {
@@ -269,6 +269,7 @@
   "Multimatic::JR103391": "2026-09-23T17:46:05+00:00",
   "Multimatic::JR103464": "2026-09-10T17:59:47+00:00",
   "Multimatic::JR103522": "2026-09-23T15:15:26+00:00",
+  "Multimatic::JR103526": "2026-09-28T23:37:34+00:00",
   "Neuralink::5469298003": "2026-09-23T17:46:05+00:00",
   "Neuralink::5469305003": "2026-09-23T17:46:05+00:00",
   "Neuralink::6083322003": "2026-09-23T17:46:05+00:00",
@@ -428,6 +429,7 @@
   "alt::790ae7ea4140e94d": "2026-09-23T18:13:50+00:00",
   "alt::7a051f0b27ecfc76": "2026-09-23T18:13:50+00:00",
   "alt::7a5321748abd3b9d": "2026-09-21T16:44:49+00:00",
+  "alt::7ab2e96ef2f71147": "2026-09-28T23:37:34+00:00",
   "alt::7d093d6dcd7c07c0": "2026-09-23T17:46:05+00:00",
   "alt::7d1245c93742ba77": "2026-09-18T18:01:05+00:00",
   "alt::7f24a0572fba118c": "2026-09-23T17:46:05+00:00",
