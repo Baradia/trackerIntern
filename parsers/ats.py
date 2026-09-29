@@ -9,6 +9,7 @@ response; scraper.py will then call the matching *_detail() function only
 for jobs that are new and have already survived the title/location filters.
 """
 
+import re
 import time
 import requests
 
@@ -298,6 +299,88 @@ def bamboohr(cfg, ua):
 #   base:   https://jobs.dana.com
 #   prefix: optional sub-path, e.g. /dofasco for ArcelorMittal
 # --------------------------------------------------------------------------
+def _sf_locales(html, cfg):
+    """Candidate locales: config override, anything the page advertises,
+    then common defaults."""
+    cands = [cfg.get("locale")] if cfg.get("locale") else []
+    cands += re.findall(r"locale['\"]?\s*[:=]\s*['\"]([a-z]{2}_[A-Z]{2})", html)
+    m = re.search(r'<html[^>]*lang="([a-z]{2})-([A-Za-z]{2})"', html)
+    if m:
+        cands.append(f"{m.group(1)}_{m.group(2).upper()}")
+    cands += ["en_CA", "en_US", "en_GB"]
+    seen, out = set(), []
+    for c in cands:
+        if c and c not in seen:
+            seen.add(c)
+            out.append(c)
+    return out
+
+
+def _sf_unify(cfg, ua):
+    """Newer SuccessFactors 'Unify' career sites render the job list with
+    JavaScript from a JSON endpoint instead of serving HTML rows."""
+    base = cfg["base"].rstrip("/")
+    browser = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+               "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": browser})
+
+    page = sess.get(f"{base}/search/?q=&startrow=0", timeout=TIMEOUT)
+    m = re.search(r"CSRFToken\s*[=:]\s*['\"]([^'\"]+)['\"]", page.text)
+    headers = {"Content-Type": "application/json",
+               "Accept": "application/json",
+               "Referer": f"{base}/search/"}
+    if m:
+        headers["X-CSRF-Token"] = m.group(1)
+
+    def fetch(locale, pnum):
+        body = {"locale": locale, "pageNumber": pnum, "sortBy": "",
+                "keywords": "", "location": "", "facetFilters": {},
+                "brand": "", "skills": [], "categoryId": 0,
+                "alertId": "", "rcmCandidateId": ""}
+        r = sess.post(f"{base}/services/recruiting/v1/jobs",
+                      json=body, headers=headers, timeout=TIMEOUT)
+        r.raise_for_status()
+        return r.json()
+
+    # find the locale the site actually answers to
+    locale, first = None, None
+    for cand in _sf_locales(page.text, cfg):
+        data = fetch(cand, 0)
+        if data.get("totalJobs") or data.get("jobSearchResult"):
+            locale, first = cand, data
+            break
+        time.sleep(0.3)
+    if not locale:
+        return []
+
+    out, pnum, data = [], 0, first
+    while pnum < 60:
+        items = data.get("jobSearchResult") or []
+        for it in items:
+            j = it.get("response", it)
+            jid = str(j.get("id", ""))
+            title = (j.get("unifiedStandardTitle") or j.get("title")
+                     or j.get("jobTitle") or "")
+            locs = (j.get("jobLocationShort") or j.get("jobLocation")
+                    or j.get("location") or [])
+            if isinstance(locs, str):
+                locs = [locs]
+            slug = j.get("urlTitle") or ""
+            url = (f"{base}/job/{slug}/{jid}-{locale}" if slug
+                   else f"{base}/job/{jid}")
+            out.append({"id": jid, "title": title,
+                        "location": "; ".join(str(x) for x in locs),
+                        "url": url, "description": ""})
+        total = data.get("totalJobs") or 0
+        pnum += 1
+        if not items or (total and len(out) >= total):
+            break
+        time.sleep(0.4)
+        data = fetch(locale, pnum)
+    return out
+
+
 def successfactors(cfg, ua):
     from bs4 import BeautifulSoup
 
@@ -314,6 +397,9 @@ def successfactors(cfg, ua):
 
         rows = soup.select("tr.data-row") or soup.select("li.job-tile")
         if not rows:
+            if startrow == 0:
+                # page shell with no rows: the JS-rendered 'Unify' template
+                return _sf_unify(cfg, ua)
             break
 
         for row in rows:
@@ -385,12 +471,85 @@ def eightfold(cfg, ua):
     return out
 
 
+
+# --------------------------------------------------------------------------
+# iCIMS   careers page: careers-<token>.icims.com/jobs/...
+#   host: careers-hexagonpositioning.icims.com
+# No public JSON API; the search page renders HTML when in_iframe=1.
+# Parsing is deliberately tolerant: any link to /jobs/<id>/ is a posting.
+# --------------------------------------------------------------------------
+def icims(cfg, ua):
+    from bs4 import BeautifulSoup
+
+    host = cfg["host"].replace("https://", "").rstrip("/")
+    out, seen = [], set()
+    browser = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+               "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+    sess = requests.Session()
+    sess.headers.update({
+        "User-Agent": browser,
+        "Accept": ("text/html,application/xhtml+xml,application/xml;q=0.9,"
+                   "image/avif,image/webp,*/*;q=0.8"),
+        "Accept-Language": "en-CA,en;q=0.9",
+        "Referer": f"https://{host}/jobs/intro",
+        "Upgrade-Insecure-Requests": "1",
+    })
+    # warm the session so any cookies the site sets are sent on the search
+    try:
+        sess.get(f"https://{host}/jobs/intro?in_iframe=1", timeout=TIMEOUT)
+    except Exception:
+        pass
+
+    for page in range(40):
+        url = f"https://{host}/jobs/search?ss=1&pr={page}&in_iframe=1"
+        r = sess.get(url, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        new_here = 0
+        for a in soup.find_all("a", href=True):
+            m = re.search(r"/jobs/(\d+)/", a["href"])
+            if not m:
+                continue
+            jid = m.group(1)
+            if jid in seen:
+                continue
+            title = a.get_text(" ", strip=True)
+            h = a.find(["h2", "h3"])
+            if h:
+                title = h.get_text(" ", strip=True)
+            if not title or title.lower() in ("apply", "view", "login"):
+                continue
+            seen.add(jid)
+            new_here += 1
+
+            row = a.find_parent("div", class_=re.compile("row")) or a.parent
+            text = row.get_text(" | ", strip=True) if row else ""
+            loc = ""
+            lm = re.search(r"(?:Job )?Locations?\s*\|?\s*([^|]+)", text, re.I)
+            if lm:
+                loc = lm.group(1).strip()
+
+            link = a["href"].split("?")[0]
+            if not link.startswith("http"):
+                link = f"https://{host}{link}"
+            out.append({"id": jid, "title": title, "location": loc,
+                        "url": link, "description": ""})
+
+        if not new_here:
+            break
+        time.sleep(0.5)
+    return out
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
     "bamboohr": bamboohr,
     "successfactors": successfactors,
     "eightfold": eightfold,
+    "icims": icims,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,

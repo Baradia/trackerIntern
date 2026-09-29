@@ -208,12 +208,9 @@ companies:
     enabled: false
 
   - name: Ontario Power Generation
-    ats: workday
-    tenant: opg
-    wd: wd3
-    site: OPG_Careers
+    ats: successfactors
+    base: https://jobs.opg.com
     tier: ontario_defence
-    enabled: false
 
   - name: Bruce Power
     ats: workday
@@ -413,3 +410,12 @@ companies:
     wd: wd5
     site: LITE
     tier: watchlist
+
+  # iCIMS returns 405 to scripts even with browser headers - bot protection.
+  # Needs Playwright (capture.py). Parser kept in ats.py for other iCIMS sites.
+  - name: Hexagon Positioning (NovAtel)
+    ats: icims
+    host: careers-hexagonpositioning.icims.com
+    tier: watchlist
+    enabled: false
+
