@@ -407,3 +407,9 @@ companies:
     site: StrykerCareers
     tier: watchlist
 
+  - name: Lumentum
+    ats: workday
+    tenant: lumentum
+    wd: wd5
+    site: LITE
+    tier: watchlist
