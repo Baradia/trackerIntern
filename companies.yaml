@@ -421,3 +421,9 @@ companies:
     host: ejia.fa.us6.oraclecloud.com
     site: CX_1001
     tier: ontario
+
+  - name: FortisBC
+    ats: successfactors
+    base: https://careers.fortisbc.com
+    tier: western
+
