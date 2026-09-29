@@ -436,40 +436,66 @@ def successfactors(cfg, ua):
 def eightfold(cfg, ua):
     host = cfg["host"].replace("https://", "").rstrip("/")
     domain = cfg.get("domain") or host.replace("jobs.", "")
-    out, start, num = [], 0, 100
-
     browser = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
-    extra = {"Accept": "application/json",
-             "Referer": f"https://{host}/careers",
-             "Origin": f"https://{host}"}
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": browser,
+                         "Accept": "application/json, text/plain, */*",
+                         "Accept-Language": "en-CA,en;q=0.9",
+                         "Referer": f"https://{host}/careers?domain={domain}"})
+    # warm the session: the careers page sets the cookies the API checks
+    try:
+        sess.get(f"https://{host}/careers?domain={domain}", timeout=TIMEOUT)
+    except Exception:
+        pass
 
-    while start < 2000:
-        url = (f"https://{host}/api/apply/v2/jobs?domain={domain}"
-               f"&start={start}&num={num}&query=&sort_by=relevance")
-        data = _retry(lambda: requests.get(
-            url, headers={"User-Agent": browser, **extra}, timeout=TIMEOUT))
-        items = data.get("positions") or data.get("jobs") or []
-        for j in items:
-            jid = str(j.get("id") or j.get("pid") or "")
-            loc = (j.get("location")
-                   or ", ".join(j.get("locations") or [])
-                   or "")
-            out.append({
-                "id": jid,
+    def row(j):
+        jid = str(j.get("id") or j.get("pid") or "")
+        loc = (j.get("location")
+               or ", ".join(j.get("locations") or [])
+               or ", ".join(j.get("standardizedLocations") or []) or "")
+        return {"id": jid,
                 "title": j.get("name") or j.get("title", ""),
                 "location": loc,
-                "url": (j.get("canonicalPositionUrl")
-                        or f"https://{host}/careers?pid={jid}"),
-                "description": j.get("job_description", "") or "",
-            })
-        total = data.get("count") or data.get("total") or 0
-        start += len(items)
-        if not items or (total and start >= total) or len(items) < num:
-            break
-        time.sleep(0.4)
-    return out
+                "url": (j.get("canonicalPositionUrl") or j.get("positionUrl")
+                        or f"https://{host}/careers?pid={jid}&domain={domain}"),
+                "description": j.get("job_description", "") or ""}
 
+    endpoints = [
+        # (url template, list key path, page size)
+        (f"https://{host}/api/apply/v2/jobs?domain={domain}"
+         "&start={start}&num={num}&query=&sort_by=relevance", ("positions",), 100),
+        (f"https://{host}/api/pcsx/search?domain={domain}"
+         "&query=&location=&start={start}&sort_by=relevance", ("data", "positions"), 10),
+    ]
+
+    last_err = None
+    for tmpl, keypath, num in endpoints:
+        out, start = [], 0
+        try:
+            while start < 3000:
+                r = sess.get(tmpl.format(start=start, num=num), timeout=TIMEOUT)
+                r.raise_for_status()
+                data = r.json()
+                node = data
+                for k in keypath:
+                    node = (node or {}).get(k) if isinstance(node, dict) else None
+                items = node or data.get("jobs") or []
+                out.extend(row(j) for j in items)
+                total = (data.get("count") or data.get("total")
+                         or (data.get("data") or {}).get("count") or 0)
+                start += len(items)
+                if not items or (total and start >= total) or len(items) < num:
+                    break
+                time.sleep(0.4)
+            if out:
+                return out
+        except Exception as e:
+            last_err = e
+            continue
+    if last_err:
+        raise last_err
+    return []
 
 
 # --------------------------------------------------------------------------
