@@ -228,12 +228,9 @@ companies:
     enabled: false
 
   - name: Hatch
-    ats: workday
-    tenant: hatch
-    wd: wd3
-    site: Hatch_Careers
+    ats: successfactors
+    base: https://jobs.hatch.com
     tier: ontario_defence
-    enabled: false
 
   - name: General Dynamics Land Systems Canada
     ats: workday
@@ -419,3 +416,8 @@ companies:
     tier: watchlist
     enabled: false
 
+  - name: S&C Electric
+    ats: oracle
+    host: ejia.fa.us6.oraclecloud.com
+    site: CX_1001
+    tier: ontario
