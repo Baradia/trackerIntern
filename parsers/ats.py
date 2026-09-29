@@ -543,6 +543,89 @@ def icims(cfg, ua):
     return out
 
 
+
+# --------------------------------------------------------------------------
+# Phenom People   careers page: <host>/<country>/<lang>, e.g.
+#   host: www.pgcareers.com   path: global/en
+# Jobs come from POST <host>/widgets (ddoKey=refineSearch). If that fails,
+# fall back to the phApp.ddo JSON embedded in the search page (page 1 only).
+# --------------------------------------------------------------------------
+def _phenom_jobs(data):
+    for key in ("refineSearch", "eagerLoadRefineSearch"):
+        node = data.get(key) if isinstance(data, dict) else None
+        if node:
+            d = node.get("data") or {}
+            return d.get("jobs") or [], node.get("totalHits") or d.get("totalHits") or 0
+    return [], 0
+
+
+def _phenom_row(j, host, path):
+    jid = str(j.get("jobId") or j.get("reqId") or j.get("jobSeqNo") or "")
+    loc = (j.get("location") or j.get("cityStateCountry")
+           or ", ".join(x for x in (j.get("city"), j.get("state"),
+                                    j.get("country")) if x) or "")
+    return {"id": jid,
+            "title": j.get("title", ""),
+            "location": loc,
+            "url": f"https://{host}/{path}/job/{jid}",
+            "description": j.get("descriptionTeaser", "") or ""}
+
+
+def phenom(cfg, ua):
+    import json as _json
+
+    host = cfg["host"].replace("https://", "").rstrip("/")
+    path = cfg.get("path", "global/en").strip("/")
+    country, lang = (path.split("/") + ["en"])[:2]
+    browser = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+               "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": browser})
+    page = sess.get(f"https://{host}/{path}/search-results", timeout=TIMEOUT)
+
+    out, seen, size, frm = [], set(), 50, 0
+    try:
+        while frm < 3000:
+            body = {"lang": f"{lang}_{country}", "deviceType": "desktop",
+                    "country": country, "pageName": "search-results",
+                    "ddoKey": "refineSearch", "sortBy": "", "subsearch": "",
+                    "from": frm, "jobs": True, "counts": True,
+                    "all_fields": [], "size": size, "clearAll": False,
+                    "jdsource": "facets", "isSliderEnable": False,
+                    "pageId": "page20", "siteType": "external",
+                    "keywords": "", "global": True, "selected_fields": {},
+                    "locationData": {}}
+            r = sess.post(f"https://{host}/widgets", json=body,
+                          headers={"Content-Type": "application/json",
+                                   "Referer": page.url}, timeout=TIMEOUT)
+            r.raise_for_status()
+            jobs, total = _phenom_jobs(r.json())
+            for j in jobs:
+                row = _phenom_row(j, host, path)
+                if row["id"] and row["id"] not in seen:
+                    seen.add(row["id"])
+                    out.append(row)
+            frm += len(jobs)
+            if not jobs or (total and frm >= total):
+                break
+            time.sleep(0.4)
+    except Exception:
+        out = []
+
+    if out:
+        return out
+
+    # fallback: first page embedded in the HTML
+    m = re.search(r"phApp\.ddo\s*=\s*(\{.*?\});\s*phApp", page.text, re.S)
+    if m:
+        try:
+            jobs, _ = _phenom_jobs(_json.loads(m.group(1)))
+            return [_phenom_row(j, host, path) for j in jobs]
+        except Exception:
+            pass
+    return []
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
@@ -550,6 +633,7 @@ LISTERS = {
     "successfactors": successfactors,
     "eightfold": eightfold,
     "icims": icims,
+    "phenom": phenom,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,

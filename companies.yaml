@@ -92,12 +92,11 @@ companies:
     token: armstrongfluidtechnology
     tier: ontario
 
-  # TODO careers.tranetechnologies.com
   - name: Trane Technologies
-    ats: custom
-    handler: trane_technologies
+    ats: phenom
+    host: careers.tranetechnologies.com
+    path: global/en
     tier: ontario
-    enabled: false
 
   # TODO embedded widget on corporate.nestle.ca
   - name: Nestle Canada
@@ -426,4 +425,10 @@ companies:
     ats: successfactors
     base: https://careers.fortisbc.com
     tier: western
+
+  - name: Procter & Gamble
+    ats: phenom
+    host: www.pgcareers.com
+    path: global/en
+    tier: ontario
 
