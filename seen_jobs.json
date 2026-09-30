@@ -3,185 +3,185 @@
   "1X": {
    "consecutive_empty": 0,
    "last_count": 92,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "ATS Corporation": {
    "consecutive_empty": 0,
-   "last_count": 133,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 135,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Applied Materials": {
    "consecutive_empty": 0,
    "last_count": 2000,
    "last_error": "2026-09-23T19:56:11+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "ArcelorMittal Dofasco": {
    "consecutive_empty": 0,
    "last_count": 2,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Armstrong Fluid Technology": {
    "consecutive_empty": 0,
    "last_count": 149,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Bruce Power": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Dana Incorporated": {
    "consecutive_empty": 0,
-   "last_count": 349,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 350,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Etched": {
    "consecutive_empty": 0,
    "last_count": 109,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Fab2": {
    "consecutive_empty": 0,
    "last_count": 61,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Formlabs": {
    "consecutive_empty": 0,
-   "last_count": 217,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 220,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "FortisBC": {
    "consecutive_empty": 0,
    "last_count": 87,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Harbinger Motors": {
    "consecutive_empty": 0,
-   "last_count": 96,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 95,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Hatch": {
    "consecutive_empty": 0,
-   "last_count": 758,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 762,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Heron Power": {
    "consecutive_empty": 0,
-   "last_count": 38,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 39,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Honda Canada": {
    "consecutive_empty": 0,
-   "last_count": 9,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 8,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Leonardo DRS": {
    "consecutive_empty": 0,
-   "last_count": 407,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 413,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
-   "last_count": 217,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 219,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Lucid Motors": {
    "consecutive_empty": 0,
-   "last_count": 435,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 448,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Lumentum": {
    "consecutive_empty": 0,
    "last_count": 251,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
-   "last_count": 1454,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 1429,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Mesh Optical Technologies": {
    "consecutive_empty": 0,
    "last_count": 29,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
-   "last_count": 20,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 19,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Multimatic": {
    "consecutive_empty": 0,
-   "last_count": 123,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 121,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Neuralink": {
    "consecutive_empty": 0,
    "last_count": 82,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "OTTO Motors (Rockwell)": {
    "consecutive_empty": 0,
-   "last_count": 394,
+   "last_count": 386,
    "last_error": "2026-08-24T13:45:50+00:00: ReadTimeout: HTTPSConnectionPool(host='rockwellautomation.wd1.myworkdayjobs.com', port=443): Read timed out. (read timeout=20)",
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Odys Aviation": {
    "consecutive_empty": 0,
    "last_count": 13,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Ontario Power Generation": {
    "consecutive_empty": 0,
-   "last_count": 33,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 36,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Procter & Gamble": {
    "consecutive_empty": 0,
-   "last_count": 830,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 842,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
    "last_count": 22,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "S&C Electric": {
    "consecutive_empty": 0,
-   "last_count": 186,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 185,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Solcoa Industries": {
    "consecutive_empty": 0,
    "last_count": 9,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Stryker": {
    "consecutive_empty": 0,
-   "last_count": 1483,
+   "last_count": 1467,
    "last_error": "2026-09-25T15:42:30+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs",
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Teledyne FLIR": {
    "consecutive_empty": 0,
-   "last_count": 766,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 763,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Toyota Motor Manufacturing Canada": {
    "consecutive_empty": 0,
-   "last_count": 11,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 9,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Trane Technologies": {
    "consecutive_empty": 0,
-   "last_count": 1676,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 1671,
+   "last_success": "2026-09-30T16:49:13+00:00"
   },
   "Verkada": {
    "consecutive_empty": 0,
-   "last_count": 301,
-   "last_success": "2026-09-30T00:25:44+00:00"
+   "last_count": 303,
+   "last_success": "2026-09-30T16:49:13+00:00"
   }
  },
  "jobs": {
@@ -316,6 +316,9 @@
   "Leonardo DRS::1432399300": "2026-09-23T18:13:50+00:00",
   "Leonardo DRS::1433041300": "2026-09-23T18:13:50+00:00",
   "Leonardo DRS::1433136200": "2026-09-23T19:56:11+00:00",
+  "Leonardo DRS::1435314400": "2026-09-30T16:49:13+00:00",
+  "Leonardo DRS::1435314600": "2026-09-30T16:49:13+00:00",
+  "Leonardo DRS::1435401300": "2026-09-30T16:49:13+00:00",
   "Linamar::14378": "2026-09-23T17:46:05+00:00",
   "Lumentum::20261183": "2026-09-29T19:58:51+00:00",
   "Lumentum::20261193": "2026-09-29T19:58:51+00:00",
@@ -499,6 +502,7 @@
   "Trane Technologies::JR-15648": "2026-09-29T19:58:51+00:00",
   "Trane Technologies::JR-16160": "2026-09-29T19:58:51+00:00",
   "Trane Technologies::JR-16162": "2026-09-29T19:58:51+00:00",
+  "Trane Technologies::JR-16745": "2026-09-30T16:49:13+00:00",
   "Trane Technologies::JR-3688": "2026-09-29T19:58:51+00:00",
   "Trane Technologies::JR-644": "2026-09-29T19:58:51+00:00",
   "Trane Technologies::JR-7480": "2026-09-29T19:58:51+00:00",
@@ -609,6 +613,7 @@
   "alt::460bf273eaf874da": "2026-09-23T18:13:50+00:00",
   "alt::4778ffd3be5a3c5b": "2026-09-29T19:58:51+00:00",
   "alt::4901d783e4c4d2ca": "2026-09-29T19:58:51+00:00",
+  "alt::491272cfa5642828": "2026-09-30T16:49:13+00:00",
   "alt::499c46d3c23e9f62": "2026-09-29T19:58:51+00:00",
   "alt::49a7238b995be541": "2026-09-29T19:58:51+00:00",
   "alt::4a885e41b833602b": "2026-09-29T19:58:51+00:00",
@@ -643,6 +648,7 @@
   "alt::62109d127b16b861": "2026-09-23T18:13:50+00:00",
   "alt::6273bc544e63c709": "2026-09-23T18:13:50+00:00",
   "alt::635e8d98a4473bb2": "2026-09-23T17:46:05+00:00",
+  "alt::636016d0400e277b": "2026-09-30T16:49:13+00:00",
   "alt::64edcbc5e37600e7": "2026-09-23T17:46:05+00:00",
   "alt::6533b9e536b5d988": "2026-09-29T19:58:51+00:00",
   "alt::6672dc4bace3c977": "2026-09-23T17:46:05+00:00",
@@ -707,6 +713,7 @@
   "alt::9583dd0cdde9e554": "2026-09-29T19:58:51+00:00",
   "alt::958ea912df6493b4": "2026-09-29T19:58:51+00:00",
   "alt::9727e16d060f65f6": "2026-09-29T19:58:51+00:00",
+  "alt::976a293ac8f46f92": "2026-09-30T16:49:13+00:00",
   "alt::9771631f9c3420a4": "2026-08-19T19:20:25+00:00",
   "alt::979a80b851edeccd": "2026-09-23T17:46:05+00:00",
   "alt::97ca210396f80529": "2026-09-23T18:13:50+00:00",
@@ -735,6 +742,7 @@
   "alt::acdb340428d1e3e2": "2026-09-29T19:58:51+00:00",
   "alt::ae77352d67472073": "2026-09-29T19:58:51+00:00",
   "alt::af55f8e14b330b1b": "2026-09-23T17:46:05+00:00",
+  "alt::b149a20dfcc51c81": "2026-09-30T16:49:13+00:00",
   "alt::b1d5128135c304df": "2026-09-29T19:58:51+00:00",
   "alt::b264d1e673298a17": "2026-09-23T18:13:50+00:00",
   "alt::b386109f000a9489": "2026-09-23T17:46:05+00:00",
