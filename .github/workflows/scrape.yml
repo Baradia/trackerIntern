@@ -2,7 +2,7 @@ name: coop-tracker
 
 on:
   schedule:
-    # every 2 hours between 11:00 and 23:00 UTC (7am-7pm ET)
+    # every 2 hours, 7am-7pm ET; minute 17 avoids top-of-hour congestion
     - cron: '17 11-23/2 * * *'
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -26,6 +26,16 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      # Firefox (default) and Chromium for companies with browser: true
+      - name: Cache Playwright browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install browsers
+        run: python -m playwright install --with-deps firefox chromium
 
       - name: Run scraper
         env:

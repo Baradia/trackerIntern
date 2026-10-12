@@ -433,7 +433,26 @@ def successfactors(cfg, ua):
 #   host:   jobs.arcadis.com
 #   domain: arcadis.com   (the 'domain' query param, usually the corp domain)
 # --------------------------------------------------------------------------
+def _ef_row(j, host, domain):
+    jid = str(j.get("id") or j.get("pid") or "")
+    loc = (j.get("location")
+           or ", ".join(j.get("locations") or [])
+           or ", ".join(j.get("standardizedLocations") or []) or "")
+    url = (j.get("canonicalPositionUrl") or j.get("positionUrl")
+           or f"https://{host}/careers?pid={jid}&domain={domain}")
+    if url.startswith("/"):
+        url = f"https://{host}{url}"
+    return {"id": jid,
+            "title": j.get("name") or j.get("title", ""),
+            "location": loc,
+            "url": url,
+            "description": j.get("job_description", "") or ""}
+
+
 def eightfold(cfg, ua):
+    if cfg.get("browser"):
+        from .browser import eightfold_browser
+        return eightfold_browser(cfg)
     host = cfg["host"].replace("https://", "").rstrip("/")
     domain = cfg.get("domain") or host.replace("jobs.", "")
     browser = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -450,16 +469,7 @@ def eightfold(cfg, ua):
         pass
 
     def row(j):
-        jid = str(j.get("id") or j.get("pid") or "")
-        loc = (j.get("location")
-               or ", ".join(j.get("locations") or [])
-               or ", ".join(j.get("standardizedLocations") or []) or "")
-        return {"id": jid,
-                "title": j.get("name") or j.get("title", ""),
-                "location": loc,
-                "url": (j.get("canonicalPositionUrl") or j.get("positionUrl")
-                        or f"https://{host}/careers?pid={jid}&domain={domain}"),
-                "description": j.get("job_description", "") or ""}
+        return _ef_row(j, host, domain)
 
     endpoints = [
         # (url template, list key path, page size)
@@ -504,8 +514,65 @@ def eightfold(cfg, ua):
 # No public JSON API; the search page renders HTML when in_iframe=1.
 # Parsing is deliberately tolerant: any link to /jobs/<id>/ is a posting.
 # --------------------------------------------------------------------------
-def icims(cfg, ua):
+_ICIMS_GENERIC = {"apply", "apply now", "view", "view job", "view details",
+                  "login", "log in", "learn more", "details", "more", ""}
+
+
+def _icims_parse(html, host, seen, out):
+    """Pull postings out of one iCIMS search page. Returns how many were new.
+
+    A posting usually has several links to /jobs/<id>/ (title, "Apply Now",
+    ...). Group them by id and keep the best title: a heading inside the
+    link, then a link with 'title' in its class, then any non-generic text.
+    """
     from bs4 import BeautifulSoup
+    soup = BeautifulSoup(html, "html.parser")
+
+    found = {}   # jid -> (rank, title, anchor)
+    order = []
+    for a in soup.find_all("a", href=True):
+        m = re.search(r"/jobs/(\d+)/", a["href"])
+        if not m:
+            continue
+        jid = m.group(1)
+        h = a.find(["h1", "h2", "h3", "h4"])
+        text = (h or a).get_text(" ", strip=True)
+        if text.lower() in _ICIMS_GENERIC:
+            continue
+        cls = " ".join(a.get("class") or []).lower()
+        rank = 3 if h else 2 if "title" in cls else 1
+        if jid not in found:
+            order.append(jid)
+        if jid not in found or rank > found[jid][0]:
+            found[jid] = (rank, text, a)
+
+    new_here = 0
+    for jid in order:
+        if jid in seen:
+            continue
+        _, title, a = found[jid]
+        seen.add(jid)
+        new_here += 1
+
+        row = a.find_parent("div", class_=re.compile("row")) or a.parent
+        text = row.get_text(" | ", strip=True) if row else ""
+        loc = ""
+        lm = re.search(r"(?:Job )?Locations?\s*(?:\|\s*)*([^|\s][^|]*)", text, re.I)
+        if lm:
+            loc = lm.group(1).strip()
+
+        link = a["href"].split("?")[0]
+        if not link.startswith("http"):
+            link = f"https://{host}{link}"
+        out.append({"id": jid, "title": title, "location": loc,
+                    "url": link, "description": ""})
+    return new_here
+
+
+def icims(cfg, ua):
+    if cfg.get("browser"):
+        from .browser import icims_browser
+        return icims_browser(cfg)
 
     host = cfg["host"].replace("https://", "").rstrip("/")
     out, seen = [], set()
@@ -521,7 +588,6 @@ def icims(cfg, ua):
         "Referer": f"https://{host}/jobs/intro",
         "Upgrade-Insecure-Requests": "1",
     })
-    # warm the session so any cookies the site sets are sent on the search
     try:
         sess.get(f"https://{host}/jobs/intro?in_iframe=1", timeout=TIMEOUT)
     except Exception:
@@ -531,39 +597,7 @@ def icims(cfg, ua):
         url = f"https://{host}/jobs/search?ss=1&pr={page}&in_iframe=1"
         r = sess.get(url, timeout=TIMEOUT)
         r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
-
-        new_here = 0
-        for a in soup.find_all("a", href=True):
-            m = re.search(r"/jobs/(\d+)/", a["href"])
-            if not m:
-                continue
-            jid = m.group(1)
-            if jid in seen:
-                continue
-            title = a.get_text(" ", strip=True)
-            h = a.find(["h2", "h3"])
-            if h:
-                title = h.get_text(" ", strip=True)
-            if not title or title.lower() in ("apply", "view", "login"):
-                continue
-            seen.add(jid)
-            new_here += 1
-
-            row = a.find_parent("div", class_=re.compile("row")) or a.parent
-            text = row.get_text(" | ", strip=True) if row else ""
-            loc = ""
-            lm = re.search(r"(?:Job )?Locations?\s*\|?\s*([^|]+)", text, re.I)
-            if lm:
-                loc = lm.group(1).strip()
-
-            link = a["href"].split("?")[0]
-            if not link.startswith("http"):
-                link = f"https://{host}{link}"
-            out.append({"id": jid, "title": title, "location": loc,
-                        "url": link, "description": ""})
-
-        if not new_here:
+        if not _icims_parse(r.text, host, seen, out):
             break
         time.sleep(0.5)
     return out
@@ -652,6 +686,93 @@ def phenom(cfg, ua):
     return []
 
 
+# --------------------------------------------------------------------------
+# iCIMS Jibe   careers sites like careers.rivian.com/careers-home/jobs
+#   host: careers.rivian.com   path: careers-home
+# JSON API at <host>/api/jobs (100/page). If plain requests are blocked,
+# set browser: true to call it from inside Firefox; if the API is missing,
+# the browser path reads the rendered job cards instead.
+# --------------------------------------------------------------------------
+def _jibe_row(d, host, path):
+    d = d.get("data", d)
+    jid = str(d.get("req_id") or d.get("slug") or d.get("id") or "")
+    loc = (d.get("full_location") or d.get("location_name")
+           or ", ".join(x for x in (d.get("city"), d.get("state"),
+                                    d.get("country")) if x) or "")
+    slug = d.get("slug") or jid
+    return {"id": jid, "title": d.get("title", ""), "location": loc,
+            "url": f"https://{host}/{path}/jobs/{slug}",
+            "description": d.get("description", "") or ""}
+
+
+def _jibe_api_url(host, page):
+    return (f"https://{host}/api/jobs?page={page}&limit=100"
+            "&sortBy=relevance&descending=false&internal=false")
+
+
+def _jibe_collect(fetch_json, host, path):
+    """fetch_json(url) -> parsed JSON. Pages through the API."""
+    out, seen = [], set()
+    for page in range(1, 40):
+        data = fetch_json(_jibe_api_url(host, page))
+        if not isinstance(data, dict) or "jobs" not in data:
+            raise RuntimeError("Jibe API returned no 'jobs' field")
+        items = data.get("jobs") or []
+        for it in items:
+            row = _jibe_row(it, host, path)
+            if row["id"] and row["id"] not in seen:
+                seen.add(row["id"])
+                out.append(row)
+        total = data.get("totalCount") or data.get("count") or 0
+        if not items or (total and len(out) >= total):
+            break
+        time.sleep(0.4)
+    return out
+
+
+def _jibe_parse_html(html, host, seen, out):
+    """Rendered job cards: a.job-title-link plus the card's location."""
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(html, "html.parser")
+    new_here = 0
+    for a in soup.select("a.job-title-link[href]"):
+        m = re.search(r"/jobs/([^/?#]+)", a["href"])
+        if not m or m.group(1) in seen:
+            continue
+        jid = m.group(1)
+        seen.add(jid)
+        new_here += 1
+        card = (a.find_parent("mat-expansion-panel")
+                or a.find_parent(class_=re.compile("job-result|expansion"))
+                or a.parent)
+        loc_el = card.select_one(".label-value.location") if card else None
+        loc = " ".join(loc_el.get_text(" ", strip=True).split()) if loc_el else ""
+        href = a["href"].split("?")[0]
+        out.append({"id": jid, "title": a.get_text(" ", strip=True),
+                    "location": loc,
+                    "url": href if href.startswith("http") else f"https://{host}{href}",
+                    "description": ""})
+    return new_here
+
+
+def jibe(cfg, ua):
+    host = cfg["host"].replace("https://", "").rstrip("/")
+    path = cfg.get("path", "careers-home").strip("/")
+    if cfg.get("browser"):
+        from .browser import jibe_browser
+        return jibe_browser(cfg)
+    return _jibe_collect(lambda url: _get(url, ua), host, path)
+
+
+# --------------------------------------------------------------------------
+# Generic real-browser fetch for sites with no known platform that block
+# plain requests. See parsers/browser.py.
+# --------------------------------------------------------------------------
+def browser_generic(cfg, ua):
+    from .browser import generic_browser
+    return generic_browser(cfg)
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
@@ -660,6 +781,8 @@ LISTERS = {
     "eightfold": eightfold,
     "icims": icims,
     "phenom": phenom,
+    "browser": browser_generic,
+    "jibe": jibe,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,

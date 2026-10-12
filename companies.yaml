@@ -100,8 +100,8 @@ companies:
 
   # TODO embedded widget on corporate.nestle.ca
   - name: Nestle Canada
-    ats: custom
-    handler: nestle_canada
+    ats: browser
+    url: https://www.corporate.nestle.ca/en/jobs
     tier: ontario
     enabled: false
 
@@ -120,10 +120,9 @@ companies:
 
   # TODO embedded widget on wsp.com
   - name: WSP
-    ats: custom
-    handler: wsp
+    ats: browser
+    url: https://www.wsp.com/en-ca/careers/job-opportunities?country=CA
     tier: ontario
-    enabled: false
 
   # TODO custom domain stantec.jobs
   - name: Stantec
@@ -242,10 +241,10 @@ companies:
   # ========================== CALIFORNIA ================================
   # Low priority: needs J-1 through the co-op office. Run with --tier california
   - name: Rivian
-    ats: greenhouse
-    token: rivian
+    ats: jibe
+    host: careers.rivian.com
+    path: careers-home
     tier: california
-    enabled: false
 
   - name: Lucid Motors
     ats: greenhouse
@@ -384,7 +383,7 @@ companies:
     host: jobs.arcadis.com
     domain: arcadis.com
     tier: watchlist
-    enabled: false
+    browser: true
 
   - name: Teledyne FLIR
     ats: workday
@@ -413,7 +412,7 @@ companies:
     ats: icims
     host: careers-hexagonpositioning.icims.com
     tier: watchlist
-    enabled: false
+    browser: true
 
   - name: S&C Electric
     ats: oracle
