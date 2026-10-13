@@ -773,6 +773,11 @@ def browser_generic(cfg, ua):
     return generic_browser(cfg)
 
 
+def tesla(cfg, ua):
+    from .browser import tesla_browser
+    return tesla_browser(cfg)
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
@@ -783,6 +788,7 @@ LISTERS = {
     "phenom": phenom,
     "browser": browser_generic,
     "jibe": jibe,
+    "tesla": tesla,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,

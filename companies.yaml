@@ -291,10 +291,8 @@ companies:
   # ===================== IN-HOUSE PORTALS (phase 2) =====================
   # Write parsers/custom/<handler>.py, register in parsers/custom/__init__.py
   - name: Tesla
-    ats: custom
-    handler: tesla
+    ats: tesla
     tier: california
-    enabled: false
 
   - name: Apple
     ats: custom

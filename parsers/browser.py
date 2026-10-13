@@ -37,9 +37,11 @@ def open_page(engine="firefox"):
         else:
             browser = p.firefox.launch(headless=True)
         ctx = browser.new_context(**ctx_opts)
-        # hide the most common automation giveaway
-        ctx.add_init_script(
-            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        if engine == "chromium":
+            # hide Chromium's automation flag. Not done for Firefox: there the
+            # override itself is detectable (Tesla's Akamai rejects it).
+            ctx.add_init_script(
+                "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         page = ctx.new_page()
         page.set_default_timeout(NAV_TIMEOUT)
         try:
@@ -343,3 +345,63 @@ def jibe_browser(cfg):
                 break
             time.sleep(0.5)
         return out
+
+
+# --------------------------------------------------------------------------
+# Tesla: one JSON call returns every listing with short keys
+#   {id, t: title, dp: department id, l: location id, y: type id, ...}
+# plus lookup tables to turn the ids into names. Plain requests get 403,
+# so it's fetched from inside a Firefox page on tesla.com.
+# --------------------------------------------------------------------------
+TESLA_API = "https://www.tesla.com/cua-api/apps/careers/state"
+TESLA_PAGE = "https://www.tesla.com/careers/search/?country=CA"
+
+
+def _name(v):
+    """Lookup values may be plain strings or small dicts."""
+    if isinstance(v, dict):
+        return str(v.get("name") or v.get("title") or v.get("label") or "")
+    return str(v or "")
+
+
+def _tesla_rows(data):
+    lookup = data.get("lookup") or {}
+    locs = lookup.get("locations") or {}
+    depts = lookup.get("departments") or {}
+    types = lookup.get("types") or {}
+    out = []
+    for j in data.get("listings") or []:
+        jid = str(j.get("id") or "")
+        title = str(j.get("t") or "")
+        if not jid or not title:
+            continue
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        typ = _name(types.get(str(j.get("y"))))
+        dept = _name(depts.get(str(j.get("dp"))))
+        out.append({
+            "id": jid,
+            "title": title,
+            "location": _name(locs.get(str(j.get("l")))),
+            "url": f"https://www.tesla.com/careers/search/job/{slug}-{jid}",
+            # type and department ride along so filters/tags can see them
+            "description": " | ".join(x for x in (typ, dept) if x),
+        })
+    return out
+
+
+def tesla_browser(cfg):
+    api = cfg.get("api", TESLA_API)
+    with open_page(cfg.get("engine", "firefox")) as page:
+        _goto(page, cfg.get("page", TESLA_PAGE))
+        page.wait_for_timeout(3000)
+        res = page.evaluate(_FETCH_JSON, {"url": api})
+        if res["status"] != 200:
+            # Akamai sometimes needs a second page view before it trusts
+            # the session; reload once and retry
+            page.wait_for_timeout(5000)
+            _goto(page, cfg.get("page", TESLA_PAGE))
+            page.wait_for_timeout(5000)
+            res = page.evaluate(_FETCH_JSON, {"url": api})
+    if res["status"] != 200:
+        raise RuntimeError(f"HTTP {res['status']} from Tesla API in browser")
+    return _tesla_rows(json.loads(res["body"]))
