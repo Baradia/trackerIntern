@@ -174,6 +174,9 @@ def main():
                     help="print instead of posting; do not write state")
     ap.add_argument("--company", help="run a single company by name")
     ap.add_argument("--tier", help="run only companies in this tier")
+    ap.add_argument("--local", action="store_true",
+                    help="run only companies marked local_only, with a "
+                         "separate state file (for Task Scheduler on your PC)")
     ap.add_argument("--seed", action="store_true",
                     help="record all current postings without notifying")
     args = ap.parse_args()
@@ -192,6 +195,24 @@ def main():
     if args.tier:
         companies = [c for c in companies if c.get("tier") == args.tier]
     companies = [c for c in companies if c.get("enabled", True)]
+    # local_only companies (e.g. Tesla, blocked from GitHub's servers) run
+    # only from your own machine; the cloud run skips them and vice versa
+    if args.local:
+        companies = [c for c in companies if c.get("local_only")]
+    elif not args.company:
+        companies = [c for c in companies if not c.get("local_only")]
+
+    if args.local:
+        # separate, untracked files so the PC and GitHub never conflict
+        global STATE_FILE, REJECT_LOG
+        STATE_FILE = os.path.join(HERE, "local_state.json")
+        REJECT_LOG = os.path.join(HERE, "local_rejected.log")
+
+    if not args.dry_run and not os.environ.get("DISCORD_WEBHOOK"):
+        print("FATAL: DISCORD_WEBHOOK is not set. Nothing would be delivered.\n"
+              "  Locally: use --dry-run, or set the variable first.\n"
+              "  In Actions: check the secret is named DISCORD_WEBHOOK exactly.")
+        sys.exit(1)
 
     state = load_state()
     seeding = args.seed or not state["seeded"]

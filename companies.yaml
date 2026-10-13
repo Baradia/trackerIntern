@@ -293,6 +293,7 @@ companies:
   - name: Tesla
     ats: tesla
     tier: california
+    local_only: true
 
   - name: Apple
     ats: custom
