@@ -163,7 +163,7 @@ companies:
     ats: workday
     tenant: rtx
     wd: wd5
-    site: REC_RTX_Ext_Gateway
+    site: REC_RTX_Ext_Gatey
     tier: ontario_defence
     enabled: false
 
@@ -304,6 +304,12 @@ companies:
 
   # ===================== WATCHLIST (probe.py hits) ======================
   # Found by token brute-force; all returned real job counts.
+    
+  - name: North Vector Dynamics
+    ats: ashby
+    token: northvectordynamics
+    tier: watchlist
+
   - name: Formlabs
     ats: greenhouse
     token: formlabs
