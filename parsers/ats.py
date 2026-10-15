@@ -778,6 +778,78 @@ def tesla(cfg, ua):
     return tesla_browser(cfg)
 
 
+# --------------------------------------------------------------------------
+# Kula   careers page: careers.kula.ai/<account>
+#   account: sanctuary-ai
+# Public JSON at /api/internal/ats_job_posts; field names for location and
+# description vary, so they are looked up loosely.
+# --------------------------------------------------------------------------
+def _loose_text(v):
+    if isinstance(v, str):
+        return v
+    if isinstance(v, dict):
+        for k in ("name", "title", "city", "label", "display_name", "text"):
+            if v.get(k):
+                return str(v[k])
+        return ""
+    if isinstance(v, list):
+        return ", ".join(x for x in (_loose_text(i) for i in v) if x)
+    return ""
+
+
+def _flat_items(d, depth=0):
+    """Yield (key, value) pairs, descending into nested dicts like ats_job."""
+    for k, v in d.items():
+        if isinstance(v, dict) and depth < 2 and not any(
+                w in k.lower() for w in ("location", "office", "city")):
+            yield from _flat_items(v, depth + 1)
+        else:
+            yield k, v
+
+
+def _kula_row(j, account):
+    loc_parts, desc_parts = [], []
+    for k, v in _flat_items(j):
+        kl = k.lower()
+        if any(w in kl for w in ("location", "office", "city", "workplace")):
+            t = _loose_text(v)
+            if t:
+                loc_parts.append(t)
+        elif any(w in kl for w in ("description", "content", "about",
+                                   "responsibil", "requirement", "qualif")):
+            t = _loose_text(v)
+            if t:
+                desc_parts.append(t)
+    jid = str(j.get("id", ""))
+    return {"id": jid,
+            "title": str(j.get("title", "")),
+            "location": "; ".join(dict.fromkeys(loc_parts)),
+            "url": f"https://careers.kula.ai/{account}/{jid}",
+            "description": " ".join(desc_parts)}
+
+
+def kula(cfg, ua):
+    account = cfg["account"]
+    out, seen = [], set()
+    for page in range(1, 30):
+        data = _get("https://careers.kula.ai/api/internal/ats_job_posts"
+                    f"?accountName={account}&page={page}"
+                    "&type=ats_job_post.index&items=99", ua)
+        items = data.get("data") or []
+        for j in items:
+            if j.get("listed") is False:
+                continue
+            row = _kula_row(j, account)
+            if row["id"] and row["id"] not in seen:
+                seen.add(row["id"])
+                out.append(row)
+        pages = (data.get("meta") or {}).get("pages") or 1
+        if not items or page >= pages:
+            break
+        time.sleep(0.4)
+    return out
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
@@ -789,13 +861,51 @@ LISTERS = {
     "browser": browser_generic,
     "jibe": jibe,
     "tesla": tesla,
+    "kula": kula,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,
     "oracle": oracle,
 }
 
+# --------------------------------------------------------------------------
+# Posting-text fetchers for platforms whose listing has no description.
+# Called only for new postings that already passed the title and location
+# filters, so the ITAR rule can read the full text.
+# --------------------------------------------------------------------------
+def _page_text_detail(cfg, job, ua):
+    """Fetch the posting's own page and return its visible text."""
+    from bs4 import BeautifulSoup
+    try:
+        r = requests.get(job["url"], timeout=TIMEOUT, headers={
+            "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                           "AppleWebKit/537.36 (KHTML, like Gecko) "
+                           "Chrome/126.0 Safari/537.36")})
+        if r.status_code != 200:
+            return ""
+        soup = BeautifulSoup(r.text, "html.parser")
+        for tag in soup(["script", "style", "noscript"]):
+            tag.decompose()
+        main = (soup.select_one(".jobdescription, .job-description, "
+                                "[itemprop=description], main") or soup)
+        return " ".join(main.get_text(" ", strip=True).split())[:20000]
+    except Exception:
+        return ""
+
+
+def bamboohr_detail(cfg, job, ua):
+    try:
+        data = _get(f"https://{cfg['token']}.bamboohr.com/careers/"
+                    f"{job['id']}/detail", ua)
+    except Exception:
+        return ""
+    opening = (data.get("result") or {}).get("jobOpening") or {}
+    return str(opening.get("description", "") or "")
+
+
 DETAILERS = {
     "smartrecruiters": smartrecruiters_detail,
     "workday": workday_detail,
+    "successfactors": _page_text_detail,
+    "bamboohr": bamboohr_detail,
 }

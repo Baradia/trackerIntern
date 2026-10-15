@@ -180,7 +180,6 @@ companies:
     wd: wd1
     site: Careers
     tier: ontario_defence
-    enabled: false
 
   # TODO not on SmartRecruiters - returns empty. Needs a real lookup.
   - name: Safran
@@ -271,6 +270,11 @@ companies:
     wd: wd1
     site: External
     tier: california
+
+  - name: Sanctuary AI
+    ats: kula
+    account: sanctuary-ai
+    tier: western
 
   - name: AMD
     ats: workday

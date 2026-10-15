@@ -98,7 +98,16 @@ class Filters:
         f = lambda p: re.compile(p, re.I) if p else None
         self.inc = f(t.get("include"))
         self.exc = f(t.get("exclude"))
-        self.disc = f(t.get("discipline"))
+        self.disc = f(t.get("discipline"))           # older single-regex rule
+        self.never_mech = f(t.get("never_mechanical"))
+        self.electrical = f(t.get("electrical"))
+        self.mech_override = f(t.get("mechanical_override"))
+        self.mech = f(t.get("mechanical"))
+        self.generic_eng = f(t.get("generic_engineering"))
+        self.kills = []
+        for name, rule in (cfg.get("description_kill") or {}).items():
+            self.kills.append((name, re.compile(rule["pattern"], re.I),
+                               f(rule.get("except_location"))))
         loc = cfg.get("location", {})
         self.loc_allow = [s.lower() for s in loc.get("allow", [])]
         self.loc_unknown_ok = loc.get("allow_unknown", True)
@@ -112,8 +121,28 @@ class Filters:
             return "L1-exclude"
         if self.inc and not self.inc.search(t):
             return "L1-not-student-role"
+        if self.mech:  # ordered mechanical-only rules
+            if self.never_mech and self.never_mech.search(t):
+                return "L1-non-mechanical"
+            if (self.electrical and self.electrical.search(t)
+                    and not (self.mech_override and self.mech_override.search(t))):
+                return "L1-electrical"
+            if self.mech.search(t):
+                return None
+            if self.generic_eng and self.generic_eng.search(t):
+                return None
+            return "L1-wrong-discipline"
         if self.disc and not self.disc.search(t):
             return "L1-wrong-discipline"
+        return None
+
+    def text_kill(self, job):
+        """Rules that read the posting text (e.g. ITAR). Returns a reason."""
+        blob = f"{job.get('title','')} {clean(job.get('description',''))}"
+        loc = job.get("location") or ""
+        for name, rx, except_loc in self.kills:
+            if rx.search(blob) and not (except_loc and except_loc.search(loc)):
+                return f"L3-{name}"
         return None
 
     def location_ok(self, job):
@@ -184,7 +213,7 @@ def main():
     conf = load_yaml("companies.yaml")
     filters = Filters(load_yaml("filters.yaml"))
     ua = conf.get("defaults", {}).get("user_agent", "coop-tracker/1.0")
-    detail_cap = int(conf.get("defaults", {}).get("detail_cap", 25))
+    detail_cap = int(conf.get("defaults", {}).get("detail_cap", 60))
 
     companies = conf.get("companies", [])
     if args.company:
@@ -267,10 +296,16 @@ def main():
             add_details(c, fresh, ua, detail_cap)
 
         for j in fresh:
-            j["tags"] = filters.tag(j)
-            j["score"] = filters.score(j)
+            # recorded as seen either way, so a rejected posting isn't
+            # re-fetched and re-checked on every run
             state["jobs"][j["_pk"]] = now
             state["jobs"][j["_sk"]] = now
+            r = filters.text_kill(j)
+            if r:
+                log_reject(name, j, r)
+                continue
+            j["tags"] = filters.tag(j)
+            j["score"] = filters.score(j)
             new_jobs.append(j)
 
     print(f"\n{len(new_jobs)} new posting(s)")
