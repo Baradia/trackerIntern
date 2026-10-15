@@ -309,6 +309,16 @@ companies:
     token: northvectordynamics
     tier: watchlist
 
+  - name: Rocket Lab
+    ats: greenhouse
+    token: rocketlab
+    tier: watchlist
+
+  - name: Human Computer Lab
+    ats: ashby
+    token: human-computer-lab
+    tier: watchlist
+    
   - name: Formlabs
     ats: greenhouse
     token: formlabs
