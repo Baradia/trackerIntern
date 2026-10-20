@@ -180,6 +180,7 @@ companies:
     wd: wd1
     site: Careers
     tier: ontario_defence
+    enabled: false
 
   # TODO not on SmartRecruiters - returns empty. Needs a real lookup.
   - name: Safran
