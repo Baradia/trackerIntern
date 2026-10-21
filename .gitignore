@@ -6,3 +6,4 @@ local_rejected.log
 local_run.log
 local_webhook.txt
 debug_*.html
+rejected.log

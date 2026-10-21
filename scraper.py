@@ -237,6 +237,11 @@ def main():
         STATE_FILE = os.path.join(HERE, "local_state.json")
         REJECT_LOG = os.path.join(HERE, "local_rejected.log")
 
+    # rejected.log holds only the latest run. Appending forever pushed it
+    # past GitHub's 100 MB file limit, which broke saving state.
+    if not args.dry_run:
+        open(REJECT_LOG, "w", encoding="utf-8").close()
+
     if not args.dry_run and not os.environ.get("DISCORD_WEBHOOK"):
         print("FATAL: DISCORD_WEBHOOK is not set. Nothing would be delivered.\n"
               "  Locally: use --dry-run, or set the variable first.\n"
