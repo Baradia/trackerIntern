@@ -3,207 +3,207 @@
   "1X": {
    "consecutive_empty": 0,
    "last_count": 99,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "ATS Corporation": {
    "consecutive_empty": 0,
    "last_count": 139,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Applied Materials": {
    "consecutive_empty": 0,
-   "last_count": 2000,
+   "last_count": 1995,
    "last_error": "2026-10-09T17:26:15+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Arcadis": {
    "consecutive_empty": 0,
-   "last_count": 1303,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 1301,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "ArcelorMittal Dofasco": {
    "consecutive_empty": 0,
    "last_count": 3,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Armstrong Fluid Technology": {
    "consecutive_empty": 0,
-   "last_count": 156,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 155,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Bruce Power": {
    "consecutive_empty": 0,
    "last_count": 21,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Dana Incorporated": {
    "consecutive_empty": 0,
-   "last_count": 341,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 342,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Etched": {
    "consecutive_empty": 0,
    "last_count": 115,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Fab2": {
    "consecutive_empty": 0,
    "last_count": 55,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Formlabs": {
    "consecutive_empty": 0,
-   "last_count": 238,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 239,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "FortisBC": {
    "consecutive_empty": 0,
-   "last_count": 86,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 88,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Harbinger Motors": {
    "consecutive_empty": 0,
    "last_count": 90,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Hatch": {
    "consecutive_empty": 0,
-   "last_count": 715,
+   "last_count": 716,
    "last_error": "2026-10-22T15:53:10+00:00: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Heron Power": {
    "consecutive_empty": 0,
    "last_count": 51,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Hexagon Positioning (NovAtel)": {
    "consecutive_empty": 0,
    "last_count": 34,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Honda Canada": {
    "consecutive_empty": 0,
    "last_count": 3,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Human Computer Lab": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Leonardo DRS": {
    "consecutive_empty": 0,
    "last_count": 422,
    "last_error": "2026-10-22T15:53:10+00:00: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
-   "last_count": 233,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 232,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Lucid Motors": {
    "consecutive_empty": 0,
-   "last_count": 445,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 441,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Lumentum": {
    "consecutive_empty": 0,
-   "last_count": 272,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 271,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
-   "last_count": 1433,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 1434,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Mesh Optical Technologies": {
    "consecutive_empty": 0,
    "last_count": 29,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
    "last_count": 21,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Multimatic": {
    "consecutive_empty": 0,
    "last_count": 112,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Neuralink": {
    "consecutive_empty": 0,
    "last_count": 81,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "North Vector Dynamics": {
    "consecutive_empty": 0,
    "last_count": 9,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "OTTO Motors (Rockwell)": {
-   "consecutive_empty": 0,
+   "consecutive_empty": 1,
    "last_count": 438,
-   "last_error": "2026-10-13T19:14:04+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://rockwellautomation.wd1.myworkdayjobs.com/wday/cxs/rockwellautomation/External_Rockwell_Automation/jobs",
+   "last_error": "2026-10-23T20:27:09+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://rockwellautomation.wd1.myworkdayjobs.com/wday/cxs/rockwellautomation/External_Rockwell_Automation/jobs",
    "last_success": "2026-10-23T16:01:28+00:00"
   },
   "Odys Aviation": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Ontario Power Generation": {
    "consecutive_empty": 0,
-   "last_count": 23,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 24,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Procter & Gamble": {
    "consecutive_empty": 0,
    "last_count": 895,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
    "last_count": 25,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Rivian": {
    "consecutive_empty": 0,
-   "last_count": 952,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 947,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Rocket Lab": {
    "consecutive_empty": 0,
-   "last_count": 567,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 563,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "S&C Electric": {
    "consecutive_empty": 0,
-   "last_count": 208,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 204,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Sanctuary AI": {
    "consecutive_empty": 0,
-   "last_count": 10,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 9,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Solcoa Industries": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Stryker": {
    "consecutive_empty": 0,
-   "last_count": 1496,
+   "last_count": 1499,
    "last_error": "2026-10-12T20:17:30+00:00: HTTPError: 502 Server Error: Bad Gateway for url: https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs",
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Teledyne FLIR": {
    "consecutive_empty": 0,
-   "last_count": 734,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 746,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Tesla": {
    "consecutive_empty": 1,
@@ -212,22 +212,22 @@
   "Toyota Motor Manufacturing Canada": {
    "consecutive_empty": 0,
    "last_count": 12,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Trane Technologies": {
    "consecutive_empty": 0,
-   "last_count": 1726,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 1730,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "Verkada": {
    "consecutive_empty": 0,
-   "last_count": 328,
-   "last_success": "2026-10-23T16:01:28+00:00"
+   "last_count": 329,
+   "last_success": "2026-10-23T20:27:09+00:00"
   },
   "WSP": {
-   "consecutive_empty": 4,
+   "consecutive_empty": 5,
    "last_count": 20,
-   "last_error": "2026-10-23T16:01:28+00:00: RuntimeError: HTTP 403 in browser for https://www.wsp.com/en-ca/careers/job-opportunities?country=CA",
+   "last_error": "2026-10-23T20:27:09+00:00: RuntimeError: HTTP 403 in browser for https://www.wsp.com/en-ca/careers/job-opportunities?country=CA",
    "last_success": "2026-10-22T00:00:35+00:00"
   }
  },
@@ -275,6 +275,7 @@
   "Arcadis::563671533206130": "2026-10-12T20:17:30+00:00",
   "Arcadis::563671533214962": "2026-10-12T20:17:30+00:00",
   "Arcadis::563671533296873": "2026-10-21T20:38:00+00:00",
+  "Arcadis::563671533312685": "2026-10-23T20:27:09+00:00",
   "Armstrong Fluid Technology::1001": "2026-09-23T17:46:05+00:00",
   "Dana Incorporated::1387465000": "2026-09-23T17:46:05+00:00",
   "Dana Incorporated::1424312900": "2026-09-23T17:46:05+00:00",
@@ -903,6 +904,7 @@
   "alt::4e6b8c61b2e6d24c": "2026-09-23T18:13:50+00:00",
   "alt::500bd2661c29529a": "2026-09-23T18:13:50+00:00",
   "alt::50d5a859a85a26d6": "2026-08-13T05:20:29+00:00",
+  "alt::50e1c4e8ac22b923": "2026-10-23T20:27:09+00:00",
   "alt::50f30272c2b6c640": "2026-10-14T15:50:11+00:00",
   "alt::511de009b597a0ad": "2026-09-29T19:58:51+00:00",
   "alt::51532850244b745f": "2026-09-23T17:46:05+00:00",
