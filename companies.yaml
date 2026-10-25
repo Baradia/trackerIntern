@@ -123,6 +123,7 @@ companies:
     ats: browser
     url: https://www.wsp.com/en-ca/careers/job-opportunities?country=CA
     tier: ontario
+    local_only: true
 
   # TODO custom domain stantec.jobs
   - name: Stantec

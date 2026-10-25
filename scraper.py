@@ -171,6 +171,18 @@ class Filters:
         return s
 
 
+def _short_error(e):
+    """'HTTP 403' / 'SSLError' / 'RuntimeError: HTTP 403 in browser...'"""
+    resp = getattr(e, "response", None)
+    if resp is not None and getattr(resp, "status_code", None):
+        return f"HTTP {resp.status_code}"
+    msg = " ".join(str(e).split())
+    m = re.search(r"HTTP \d{3}", msg)
+    if m:
+        return m.group(0)
+    return f"{type(e).__name__}" + (f": {msg[:60]}" if msg else "")
+
+
 # ----------------------------------------------------------------- fetch ---
 def fetch_company(c, ua):
     kind = c.get("ats")
@@ -262,7 +274,11 @@ def main():
         except Exception as e:
             h["last_error"] = f"{now}: {type(e).__name__}: {e}"[:300]
             h["consecutive_empty"] = h.get("consecutive_empty", 0) + 1
-            broken.append(f"{name}: {type(e).__name__}")
+            # one-off blips (a Workday 502, a dropped SSL connection) are
+            # common and fix themselves; only alert on a second failure in a row
+            if h["consecutive_empty"] >= 2:
+                broken.append(f"{name}: {_short_error(e)} "
+                              f"(x{h['consecutive_empty']})")
             print(f"[error] {name}: {e}")
             continue
 
