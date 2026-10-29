@@ -247,6 +247,11 @@ companies:
     path: careers-home
     tier: california
 
+  - name: Dexterity
+    ats: lever
+    token: dexterity
+    tier: watchlist
+
   - name: Lucid Motors
     ats: greenhouse
     token: lucidmotors
