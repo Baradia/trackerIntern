@@ -168,6 +168,12 @@ companies:
     tier: ontario_defence
     enabled: false
 
+  - name: Liftwerx
+    ats: html_links
+    url: https://liftwerx.com/careers/
+    link_pattern: "/careers/[a-z0-9-]+/?$"
+    tier: ontario
+
   # TODO not on SmartRecruiters - returns empty. Needs a real lookup.
   - name: MDA Space
     enabled: false
@@ -238,6 +244,11 @@ companies:
     site: Careers
     tier: ontario_defence
     enabled: false
+
+  - name: Moment Energy
+    ats: greenhouse
+    token: momentenergy
+    tier: western
 
   # ========================== CALIFORNIA ================================
   # Low priority: needs J-1 through the co-op office. Run with --tier california

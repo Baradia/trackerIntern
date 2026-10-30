@@ -850,6 +850,67 @@ def kula(cfg, ua):
     return out
 
 
+# --------------------------------------------------------------------------
+# Plain HTML careers pages (WordPress and similar) where each job is just a
+# link on the page. No browser needed.
+#   url:          https://liftwerx.com/careers/
+#   link_pattern: regex an href must match to count as a job page
+# Titles come from the link text, or a heading in the same card, or, when the
+# link only says "Learn More"/"Apply", from the job page's address.
+# --------------------------------------------------------------------------
+_GENERIC_LINK = re.compile(
+    r"^(learn more|read more|apply( now)?|view( job| details| position)?|"
+    r"more( info)?|details|see more|click here|careers?)$", re.I)
+
+
+def _title_from_slug(href):
+    slug = href.rstrip("/").split("/")[-1].split("?")[0]
+    words = re.split(r"[-_]+", slug)
+    title = " ".join(w if w.isupper() else w.capitalize() for w in words if w)
+    # "co-op" loses its hyphen in an address; restore it so filters match
+    return re.sub(r"\bCo Op\b", "Co-op", title)
+
+
+def html_links(cfg, ua):
+    from urllib.parse import urljoin
+    from bs4 import BeautifulSoup
+
+    url = cfg["url"]
+    rx = re.compile(cfg["link_pattern"], re.I)
+    r = requests.get(url, timeout=TIMEOUT, headers={
+        "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/126.0 Safari/537.36")})
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    best = {}   # absolute link -> best title seen
+    order = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"].split("#")[0]
+        link = urljoin(url, href)
+        if not rx.search(link) or link.rstrip("/") == url.rstrip("/"):
+            continue
+        text = " ".join(a.get_text(" ", strip=True).split())
+        if not text or _GENERIC_LINK.match(text):
+            card = a.find_parent(["article", "li", "div"])
+            h = card.find(["h1", "h2", "h3", "h4"]) if card else None
+            text = " ".join(h.get_text(" ", strip=True).split()) if h else ""
+        if text and _GENERIC_LINK.match(text):
+            text = ""
+        if link not in best:
+            order.append(link)
+            best[link] = text
+        elif text and not best[link]:
+            best[link] = text
+
+    return [{"id": link.rstrip("/").split("/")[-1] or link,
+             "title": best[link] or _title_from_slug(link),
+             "location": "",
+             "url": link,
+             "description": ""} for link in order]
+
+
 LISTERS = {
     "greenhouse": greenhouse,
     "ashby": ashby,
@@ -862,6 +923,7 @@ LISTERS = {
     "jibe": jibe,
     "tesla": tesla,
     "kula": kula,
+    "html_links": html_links,
     "lever": lever,
     "smartrecruiters": smartrecruiters,
     "workday": workday,
@@ -908,4 +970,5 @@ DETAILERS = {
     "workday": workday_detail,
     "successfactors": _page_text_detail,
     "bamboohr": bamboohr_detail,
+    "html_links": _page_text_detail,
 }
