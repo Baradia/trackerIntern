@@ -263,6 +263,11 @@ companies:
     host: careers.rivian.com
     path: careers-home
     tier: california
+    
+  - name: Figure AI
+    ats: greenhouse
+    token: figureai
+    tier: california
 
   - name: Rivian and VW Group Technology
     ats: ashby
