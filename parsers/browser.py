@@ -389,7 +389,7 @@ def _tesla_rows(data):
     return out
 
 
-def tesla_browser(cfg):
+def _tesla_attempt(cfg):
     api = cfg.get("api", TESLA_API)
     with open_page(cfg.get("engine", "firefox")) as page:
         _goto(page, cfg.get("page", TESLA_PAGE))
@@ -405,3 +405,19 @@ def tesla_browser(cfg):
     if res["status"] != 200:
         raise RuntimeError(f"HTTP {res['status']} from Tesla API in browser")
     return _tesla_rows(json.loads(res["body"]))
+
+
+def tesla_browser(cfg):
+    """Tesla's bot protection lets some visits through and blocks others.
+    Try up to `attempts` times, each in a fresh browser, pausing between."""
+    attempts = int(cfg.get("attempts", 3))
+    last = None
+    for n in range(attempts):
+        try:
+            return _tesla_attempt(cfg)
+        except Exception as e:
+            last = e
+            if n < attempts - 1:
+                print(f"    [tesla] attempt {n + 1} blocked ({e}); retrying")
+                time.sleep(20 * (n + 1))
+    raise last
