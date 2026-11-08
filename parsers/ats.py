@@ -155,6 +155,26 @@ def _wd_host(cfg):
             f"/en-US/{cfg['site']}")
 
 
+def _wd_find_facet(facets, wanted):
+    """Find {facetParameter: [id]} for facet values named in `wanted`
+    (e.g. ["Canada"]). Workday nests location facets, so search recursively;
+    a value's facetParameter is its nearest parent's."""
+    wanted = {w.lower() for w in wanted}
+    found = {}
+
+    def walk(nodes, param):
+        for f in nodes or []:
+            p = f.get("facetParameter") or param
+            for v in f.get("values") or []:
+                if v.get("descriptor", "").lower() in wanted and v.get("id"):
+                    found.setdefault(p, []).append(v["id"])
+                if v.get("values"):
+                    walk([v], v.get("facetParameter") or p)
+
+    walk(facets, None)
+    return found
+
+
 def workday(cfg, ua):
     """If `search_terms` is set, run one small query per term instead of
     downloading the whole board. Far faster for large employers, at the cost
@@ -168,11 +188,24 @@ def workday(cfg, ua):
     seen, out = set(), []
     limit = 20
 
+    # filter_values: options from the board's own filters, matched by name,
+    # e.g. [Canada] or ["Intern/Co-op (Fixed Term)"]. Workday then filters
+    # server-side. Needed for boards bigger than the 2500-posting cap.
+    # (countries: is the older name for the same setting.)
+    applied = {}
+    wanted = cfg.get("filter_values") or cfg.get("countries")
+    if wanted:
+        first = _post(f"{base}/jobs", ua, {"appliedFacets": {}, "limit": 1,
+                                           "offset": 0, "searchText": ""})
+        applied = _wd_find_facet(first.get("facets"), wanted)
+        if not applied:
+            raise RuntimeError(f"Workday has no filter option named {wanted}")
+
     for term in terms:
         offset, reported, page = 0, None, 0
         while True:
             page += 1
-            payload = {"appliedFacets": {}, "limit": limit,
+            payload = {"appliedFacets": applied, "limit": limit,
                        "offset": offset, "searchText": term}
             data = _post(f"{base}/jobs", ua, payload)
             if reported is None:

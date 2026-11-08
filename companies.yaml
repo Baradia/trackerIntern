@@ -160,14 +160,14 @@ companies:
     tier: ontario_defence
     enabled: false
 
-  - name: RTX (Pratt & Whitney Canada)
+  - name: RTX (Pratt & Whitney / Collins Canada)
     ats: workday
-    tenant: rtx
+    tenant: globalhr
     wd: wd5
-    site: REC_RTX_Ext_Gatey
+    site: REC_RTX_Ext_Gateway
+    filter_values: ["Intern/Co-op (Fixed Term)"]
     tier: ontario_defence
-    enabled: false
-
+    
   - name: Liftwerx
     ats: html_links
     url: https://liftwerx.com/careers/
@@ -263,7 +263,7 @@ companies:
     host: careers.rivian.com
     path: careers-home
     tier: california
-    
+
   - name: Figure AI
     ats: greenhouse
     token: figureai
