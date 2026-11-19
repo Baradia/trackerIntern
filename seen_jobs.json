@@ -2,250 +2,250 @@
  "health": {
   "1X": {
    "consecutive_empty": 0,
-   "last_count": 104,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 107,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "ATS Corporation": {
    "consecutive_empty": 0,
-   "last_count": 135,
+   "last_count": 134,
    "last_error": "2026-11-17T19:50:59+00:00: ReadTimeout: HTTPSConnectionPool(host='jobs.atsautomation.com', port=443): Read timed out. (read timeout=30)",
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Applied Materials": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 2000,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Arcadis": {
    "consecutive_empty": 0,
-   "last_count": 1246,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 1249,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "ArcelorMittal Dofasco": {
    "consecutive_empty": 0,
    "last_count": 4,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Armstrong Fluid Technology": {
    "consecutive_empty": 0,
-   "last_count": 178,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 177,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Bruce Power": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 19,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://brucepower.wd3.myworkdayjobs.com/wday/cxs/brucepower/BrucePower/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://brucepower.wd3.myworkdayjobs.com/wday/cxs/brucepower/BrucePower/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Dana Incorporated": {
    "consecutive_empty": 0,
-   "last_count": 353,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 357,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Dexterity": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Etched": {
    "consecutive_empty": 0,
-   "last_count": 116,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 118,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Fab2": {
    "consecutive_empty": 0,
    "last_count": 58,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Figure AI": {
    "consecutive_empty": 0,
    "last_count": 104,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Formlabs": {
    "consecutive_empty": 0,
-   "last_count": 276,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 278,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "FortisBC": {
    "consecutive_empty": 0,
-   "last_count": 83,
+   "last_count": 85,
    "last_error": "2026-10-25T01:08:39+00:00: SSLError: HTTPSConnectionPool(host='careers.fortisbc.com', port=443): Max retries exceeded with url: /search/?q=&startrow=0 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not va",
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Harbinger Motors": {
    "consecutive_empty": 0,
-   "last_count": 84,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 83,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Hatch": {
    "consecutive_empty": 0,
-   "last_count": 741,
+   "last_count": 743,
    "last_error": "2026-10-22T15:53:10+00:00: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Heron Power": {
    "consecutive_empty": 0,
-   "last_count": 58,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 59,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Hexagon Positioning (NovAtel)": {
    "consecutive_empty": 0,
    "last_count": 17,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Honda Canada": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 3,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://ch.wd3.myworkdayjobs.com/wday/cxs/ch/Honda_Canada/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://ch.wd3.myworkdayjobs.com/wday/cxs/ch/Honda_Canada/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Human Computer Lab": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Leonardo DRS": {
-   "consecutive_empty": 1,
-   "last_count": 451,
+   "consecutive_empty": 0,
+   "last_count": 450,
    "last_error": "2026-11-19T02:32:54+00:00: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-   "last_success": "2026-11-18T19:24:17+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Liftwerx": {
    "consecutive_empty": 0,
    "last_count": 20,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Linamar": {
    "consecutive_empty": 0,
-   "last_count": 222,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 223,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Lucid Motors": {
    "consecutive_empty": 0,
-   "last_count": 477,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 476,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Lumentum": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 280,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://lumentum.wd5.myworkdayjobs.com/wday/cxs/lumentum/LITE/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://lumentum.wd5.myworkdayjobs.com/wday/cxs/lumentum/LITE/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Magna International": {
    "consecutive_empty": 0,
-   "last_count": 1432,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 1433,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Mesh Optical Technologies": {
    "consecutive_empty": 0,
    "last_count": 29,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Miovision": {
    "consecutive_empty": 0,
    "last_count": 14,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Moment Energy": {
    "consecutive_empty": 0,
    "last_count": 25,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Multimatic": {
-   "consecutive_empty": 7,
+   "consecutive_empty": 8,
    "last_count": 119,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://multimatic.wd10.myworkdayjobs.com/wday/cxs/multimatic/MMEC/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://multimatic.wd10.myworkdayjobs.com/wday/cxs/multimatic/MMEC/jobs",
    "last_success": "2026-11-15T17:42:16+00:00"
   },
   "Neuralink": {
    "consecutive_empty": 0,
    "last_count": 75,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "North Vector Dynamics": {
    "consecutive_empty": 0,
    "last_count": 12,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "OTTO Motors (Rockwell)": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 439,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://rockwellautomation.wd1.myworkdayjobs.com/wday/cxs/rockwellautomation/External_Rockwell_Automation/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://rockwellautomation.wd1.myworkdayjobs.com/wday/cxs/rockwellautomation/External_Rockwell_Automation/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Odys Aviation": {
    "consecutive_empty": 0,
    "last_count": 19,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Ontario Power Generation": {
    "consecutive_empty": 0,
-   "last_count": 17,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 18,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Procter & Gamble": {
    "consecutive_empty": 0,
-   "last_count": 896,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 889,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Profound Medical": {
    "consecutive_empty": 0,
-   "last_count": 21,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 22,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "RTX (Pratt & Whitney / Collins Canada)": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 168,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Rivian": {
    "consecutive_empty": 0,
-   "last_count": 978,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 986,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Rivian and VW Group Technology": {
    "consecutive_empty": 0,
-   "last_count": 179,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 182,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Rocket Lab": {
    "consecutive_empty": 0,
-   "last_count": 543,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 548,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "S&C Electric": {
    "consecutive_empty": 0,
-   "last_count": 160,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 156,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Sanctuary AI": {
    "consecutive_empty": 0,
    "last_count": 11,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Solcoa Industries": {
    "consecutive_empty": 0,
    "last_count": 28,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "StandardAero": {
    "consecutive_empty": 0,
    "last_count": 274,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Stryker": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 1463,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Teledyne FLIR": {
-   "consecutive_empty": 6,
+   "consecutive_empty": 7,
    "last_count": 764,
-   "last_error": "2026-11-19T02:32:54+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://flir.wd1.myworkdayjobs.com/wday/cxs/flir/flircareers/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://flir.wd1.myworkdayjobs.com/wday/cxs/flir/flircareers/jobs",
    "last_success": "2026-11-15T23:23:05+00:00"
   },
   "Tesla": {
@@ -253,20 +253,20 @@
    "last_error": "2026-10-13T19:14:04+00:00: RuntimeError: HTTP 403 in browser for https://www.tesla.com/careers/search/?country=CA"
   },
   "Toyota Motor Manufacturing Canada": {
-   "consecutive_empty": 0,
+   "consecutive_empty": 1,
    "last_count": 7,
-   "last_error": "2026-11-18T19:24:17+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://toyota.wd503.myworkdayjobs.com/wday/cxs/toyota/Toyota_CA/jobs",
+   "last_error": "2026-11-19T19:29:00+00:00: HTTPError: 429 Client Error: Too Many Requests for url: https://toyota.wd503.myworkdayjobs.com/wday/cxs/toyota/Toyota_CA/jobs",
    "last_success": "2026-11-19T02:32:54+00:00"
   },
   "Trane Technologies": {
    "consecutive_empty": 0,
-   "last_count": 1487,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 1447,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "Verkada": {
    "consecutive_empty": 0,
-   "last_count": 346,
-   "last_success": "2026-11-19T02:32:54+00:00"
+   "last_count": 347,
+   "last_success": "2026-11-19T19:29:00+00:00"
   },
   "WSP": {
    "consecutive_empty": 0,
@@ -349,6 +349,7 @@
   "Etched::885d8a6d-b1ce-4feb-89f5-f6ac9bef8ca7": "2026-10-21T20:38:00+00:00",
   "Etched::9a1bc297-a48b-41f8-9405-be5e97ba6ebe": "2026-10-14T23:55:04+00:00",
   "Etched::a38b6166-c130-44ed-ada2-10e8c23525a7": "2026-10-21T20:38:00+00:00",
+  "Etched::bd570162-4143-42ac-be87-a473075749b9": "2026-11-19T19:29:00+00:00",
   "Etched::db1dff24-2523-4728-91cc-ca885976ff7b": "2026-10-21T20:38:00+00:00",
   "Etched::dc036272-19b8-464f-a22d-2505c14b5270": "2026-09-23T17:46:05+00:00",
   "Etched::f05e3218-5ec7-41d1-bc99-bb7014422229": "2026-09-23T17:46:05+00:00",
@@ -1398,6 +1399,7 @@
   "alt::e2dd2a72a843717f": "2026-09-29T19:58:51+00:00",
   "alt::e322cbf461ffe408": "2026-09-23T18:13:50+00:00",
   "alt::e3b8b993ae39b3eb": "2026-09-23T17:46:05+00:00",
+  "alt::e45921a83a7bdef5": "2026-11-19T19:29:00+00:00",
   "alt::e4fb39e0624668a0": "2026-11-11T18:41:45+00:00",
   "alt::e62aeb0be572c065": "2026-10-12T20:17:30+00:00",
   "alt::e6aaf6330c777287": "2026-09-29T19:58:51+00:00",
