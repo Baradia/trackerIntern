@@ -304,6 +304,8 @@ companies:
     wd: wd1
     site: External
     tier: california
+    intern_only: true
+    enabled: false
 
   - name: Sanctuary AI
     ats: kula
@@ -451,6 +453,8 @@ companies:
     wd: wd1
     site: StrykerCareers
     tier: watchlist
+    intern_only: true
+    enabled: false
 
   - name: Lumentum
     ats: workday
@@ -458,6 +462,7 @@ companies:
     wd: wd5
     site: LITE
     tier: watchlist
+    intern_only: true
 
   # iCIMS returns 405 to scripts even with browser headers - bot protection.
   # Needs Playwright (capture.py). Parser kept in ats.py for other iCIMS sites.

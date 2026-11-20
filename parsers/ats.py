@@ -17,13 +17,24 @@ TIMEOUT = 30
 RETRIES = 3
 
 
+RETRY_STATUS = {429, 500, 502, 503, 504}
+
+
 def _retry(fn):
-    """Transient timeouts are common on big boards; one blip should not take
-    a whole company out for the run."""
+    """Retry timeouts, rate limits (429) and server errors (5xx) with
+    backoff; other HTTP errors (404, 403...) fail at once."""
     last = None
-    for attempt in range(RETRIES):
+    for attempt in range(RETRIES + 1):
         try:
             r = fn()
+            if r.status_code in RETRY_STATUS and attempt < RETRIES:
+                wait = 15 * (attempt + 1)
+                try:
+                    wait = max(wait, min(int(r.headers.get("Retry-After", 0)), 90))
+                except ValueError:
+                    pass
+                time.sleep(wait)
+                continue
             r.raise_for_status()
             return r.json()
         except requests.exceptions.HTTPError:
@@ -175,6 +186,27 @@ def _wd_find_facet(facets, wanted):
     return found
 
 
+_STUDENT_OPTION = re.compile(
+    r"\b(intern|interns|internship|co-?op|coop|student|apprentice|"
+    r"early career|university|graduate program)\b", re.I)
+
+
+def _wd_find_student_facet(facets):
+    """Pick the job-type style filter options that mean intern/co-op.
+    Location facets are skipped so a city called 'University...' can't match.
+    Returns {facetParameter: [ids]} for the single best facet, or {}."""
+    best = {}
+    for f in facets or []:
+        param = f.get("facetParameter") or ""
+        if "location" in param.lower():
+            continue
+        ids = [v["id"] for v in (f.get("values") or [])
+               if v.get("id") and _STUDENT_OPTION.search(v.get("descriptor", ""))]
+        if ids and (not best or len(ids) > len(next(iter(best.values())))):
+            best = {param: ids}
+    return best
+
+
 def workday(cfg, ua):
     """If `search_terms` is set, run one small query per term instead of
     downloading the whole board. Far faster for large employers, at the cost
@@ -194,6 +226,14 @@ def workday(cfg, ua):
     # (countries: is the older name for the same setting.)
     applied = {}
     wanted = cfg.get("filter_values") or cfg.get("countries")
+    if cfg.get("intern_only") and not wanted:
+        first = _post(f"{base}/jobs", ua, {"appliedFacets": {}, "limit": 1,
+                                           "offset": 0, "searchText": ""})
+        applied = _wd_find_student_facet(first.get("facets"))
+        if not applied:
+            print(f"    [workday] {cfg.get('tenant')}: no intern/co-op filter "
+                  "found; reading the whole board")
+        time.sleep(1.0)
     if wanted:
         first = _post(f"{base}/jobs", ua, {"appliedFacets": {}, "limit": 1,
                                            "offset": 0, "searchText": ""})
@@ -229,7 +269,7 @@ def workday(cfg, ua):
             if (len(items) < limit or (reported and offset >= reported)
                     or offset >= 2500 or (max_pages and page >= max_pages)):
                 break
-            time.sleep(0.3)
+            time.sleep(1.0)
 
     if out:
         out[0]["_reported_total"] = None if len(terms) > 1 else reported
